@@ -1,0 +1,14 @@
+.noteText {
+    color: gray;
+    img {
+        max-width: 100%;
+    }
+    &__image {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+.cellImage {
+    width: 200px;
+}

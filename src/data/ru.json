@@ -1,0 +1,776 @@
+[
+    {
+        "id": 1,
+        "name": "Республика Адыгея",
+        "codes": ["01"],
+        "meta": {
+            "carCount": "409,4",
+            "postionByCarCount": 4
+        }
+    },
+    {
+        "id": 2,
+        "name": "Республика Алтай",
+        "codes": ["04"],
+        "meta": {
+            "carCount": "192,5",
+            "postionByCarCount": 80
+        }
+    },
+    {
+        "id": 3,
+        "name": "Республика Башкортостан",
+        "codes": ["02", "102", "702"],
+        "meta": {
+            "carCount": "342,6",
+            "postionByCarCount": 18
+        }
+    },
+    {
+        "id": 4,
+        "name": "Республика Бурятия",
+        "codes": ["03"],
+        "meta": {
+            "carCount": "257,2",
+            "postionByCarCount": 68
+        }
+    },
+    {
+        "id": 5,
+        "name": "Республика Дагестан",
+        "codes": ["05"],
+        "meta": {
+            "carCount": "195,5",
+            "postionByCarCount": 79
+        }
+    },
+    {
+        "id": 6,
+        "name": "Республика Ингушетия",
+        "codes": ["06"],
+        "meta": {
+            "carCount": "183,1",
+            "postionByCarCount": 82
+        }
+    },
+    {
+        "id": 7,
+        "name": "Кабардино-Балкарская Республика",
+        "codes": ["07"],
+        "meta": {
+            "carCount": "256,9",
+            "postionByCarCount": 69
+        }
+    },
+    {
+        "id": 8,
+        "name": "Республика Калмыкия",
+        "codes": ["08"],
+        "meta": {
+            "carCount": "320,6",
+            "postionByCarCount": 29
+        }
+    },
+    {
+        "id": 9,
+        "name": "Карачаево-Черкесская Республика",
+        "codes": ["09"],
+        "meta": {
+            "carCount": "201,8",
+            "postionByCarCount": 78
+        }
+    },
+    {
+        "id": 10,
+        "name": "Республика Карелия",
+        "codes": ["10"],
+        "meta": {
+            "carCount": "386,9",
+            "postionByCarCount": 6
+        }
+    },
+    {
+        "id": 11,
+        "name": "Республика Коми",
+        "codes": ["11"],
+        "meta": {
+            "carCount": "305,9",
+            "postionByCarCount": 45
+        }
+    },
+    {
+        "id": 12,
+        "name": "Республика Крым",
+        "codes": ["82"],
+        "meta": {
+            "carCount": "190,0",
+            "postionByCarCount": 81
+        }
+    },
+    {
+        "id": 13,
+        "name": "Республика Марий Эл",
+        "codes": ["12"],
+        "meta": {
+            "carCount": "248,1",
+            "postionByCarCount": 70
+        }
+    },
+    {
+        "id": 14,
+        "name": "Республика Мордовия",
+        "codes": ["13", "113"],
+        "meta": {
+            "carCount": "264,4",
+            "postionByCarCount": 65
+        }
+    },
+    {
+        "id": 15,
+        "name": "Республика Саха (Якутия)",
+        "codes": ["14"],
+        "meta": {
+            "carCount": "230,9",
+            "postionByCarCount": 73
+        }
+    },
+    {
+        "id": 16,
+        "name": "Республика Северная Осетия — Алания",
+        "codes": ["15"],
+        "meta": {
+            "carCount": "296,6",
+            "postionByCarCount": 48
+        }
+    },
+    {
+        "id": 17,
+        "name": "Республика Татарстан",
+        "codes": ["16", "116", "716"],
+        "meta": {
+            "carCount": "314,5",
+            "postionByCarCount": 39
+        }
+    },
+    {
+        "id": 18,
+        "name": "Республика Тыва",
+        "codes": ["17"],
+        "meta": {
+            "carCount": "142,5",
+            "postionByCarCount": 84
+        }
+    },
+    {
+        "id": 19,
+        "name": "Удмуртская Республика",
+        "codes": ["18"],
+        "meta": {
+            "carCount": "297,9",
+            "postionByCarCount": 47
+        }
+    },
+    {
+        "id": 20,
+        "name": "Республика Хакасия",
+        "codes": ["19"],
+        "meta": {
+            "carCount": "368,7",
+            "postionByCarCount": 12
+        }
+    },
+    {
+        "id": 21,
+        "name": "Чеченская Республика",
+        "codes": ["95"],
+        "meta": {
+            "carCount": "170,9",
+            "postionByCarCount": 83
+        }
+    },
+    {
+        "id": 22,
+        "name": "Чувашская Республика",
+        "codes": ["21", "121"],
+        "meta": {
+            "carCount": "225,7",
+            "postionByCarCount": 75
+        }
+    },
+    {
+        "id": 23,
+        "name": "Алтайский край",
+        "codes": ["22"],
+        "meta": {
+            "carCount": "309,4",
+            "postionByCarCount": 43
+        }
+    },
+    {
+        "id": 24,
+        "name": "Забайкальский край",
+        "codes": ["75", "80"],
+        "meta": {
+            "carCount": "257,9",
+            "postionByCarCount": 61
+        }
+    },
+    {
+        "id": 25,
+        "name": "Камчатский край",
+        "codes": ["41"],
+        "meta": {
+            "carCount": "498,5",
+            "postionByCarCount": 1
+        }
+    },
+    {
+        "id": 26,
+        "name": "Краснодарский край",
+        "codes": ["23", "93", "123"],
+        "meta": {
+            "carCount": "306,6",
+            "postionByCarCount": 44
+        }
+    },
+    {
+        "id": 27,
+        "name": "Красноярский край",
+        "codes": ["24", "124", "84", "88"],
+        "meta": {
+            "carCount": "294,5",
+            "postionByCarCount": 51
+        }
+    },
+    {
+        "id": 28,
+        "name": "Пермский край",
+        "codes": ["59", "81", "159"],
+        "meta": {
+            "carCount": "323,9",
+            "postionByCarCount": 25
+        }
+    },
+    {
+        "id": 29,
+        "name": "Приморский край",
+        "codes": ["25", "125"],
+        "meta": {
+            "carCount": "431,5",
+            "postionByCarCount": 3
+        }
+    },
+    {
+        "id": 30,
+        "name": "Ставропольский край",
+        "codes": ["26", "126"],
+        "meta": {
+            "carCount": "291,9",
+            "postionByCarCount": 54
+        }
+    },
+    {
+        "id": 31,
+        "name": "Хабаровский край",
+        "codes": ["27"],
+        "meta": {
+            "carCount": "266,3",
+            "postionByCarCount": 64
+        }
+    },
+    {
+        "id": 32,
+        "name": "Амурская область",
+        "codes": ["28"],
+        "meta": {
+            "carCount": "287,8",
+            "postionByCarCount": 57
+        }
+    },
+    {
+        "id": 33,
+        "name": "Архангельская область",
+        "codes": ["29"],
+        "meta": {
+            "carCount": "284,4",
+            "postionByCarCount": 77
+        }
+    },
+    {
+        "id": 34,
+        "name": "Астраханская область",
+        "codes": ["30"],
+        "meta": {
+            "carCount": "263,4",
+            "postionByCarCount": 66
+        }
+    },
+    {
+        "id": 35,
+        "name": "Белгородская область",
+        "codes": ["31"],
+        "meta": {
+            "carCount": "322,9",
+            "postionByCarCount": 26
+        }
+    },
+    {
+        "id": 36,
+        "name": "Брянская область",
+        "codes": ["32"],
+        "meta": {
+            "carCount": "202,3",
+            "postionByCarCount": 76
+        }
+    },
+    {
+        "id": 37,
+        "name": "Владимирская область",
+        "codes": ["33"],
+        "meta": {
+            "carCount": "296,2",
+            "postionByCarCount": 50
+        }
+    },
+    {
+        "id": 38,
+        "name": "Волгоградская область",
+        "codes": ["34", "134"],
+        "meta": {
+            "carCount": "436,2",
+            "postionByCarCount": 2
+        }
+    },
+    {
+        "id": 39,
+        "name": "Вологодская область",
+        "codes": ["35"],
+        "meta": {
+            "carCount": "327,5",
+            "postionByCarCount": 23
+        }
+    },
+    {
+        "id": 40,
+        "name": "Воронежская область",
+        "codes": ["36", "136"],
+        "meta": {
+            "carCount": "346,7",
+            "postionByCarCount": 15
+        }
+    },
+    {
+        "id": 41,
+        "name": "Ивановская область",
+        "codes": ["37"],
+        "meta": {
+            "carCount": "283,2",
+            "postionByCarCount": 58
+        }
+    },
+    {
+        "id": 42,
+        "name": "Иркутская область",
+        "codes": ["38", "138", "85"],
+        "meta": {
+            "carCount": "245,6",
+            "postionByCarCount": 72
+        }
+    },
+    {
+        "id": 43,
+        "name": "Калининградская область",
+        "codes": ["39", "91"],
+        "meta": {
+            "carCount": "380,1",
+            "postionByCarCount": 9
+        }
+    },
+    {
+        "id": 44,
+        "name": "Калужская область",
+        "codes": ["40"],
+        "meta": {
+            "carCount": "315,0",
+            "postionByCarCount": 36
+        }
+    },
+    {
+        "id": 45,
+        "name": "Кемеровская область",
+        "codes": ["42", "142"],
+        "meta": {
+            "carCount": "275,9",
+            "postionByCarCount": 60
+        }
+    },
+    {
+        "id": 46,
+        "name": "Кировская область",
+        "codes": ["43"],
+        "meta": {
+            "carCount": "272,9",
+            "postionByCarCount": 62
+        }
+    },
+    {
+        "id": 47,
+        "name": "Костромская область",
+        "codes": ["44"],
+        "meta": {
+            "carCount": "292,7",
+            "postionByCarCount": 53
+        }
+    },
+    {
+        "id": 48,
+        "name": "Курганская область",
+        "codes": ["45"],
+        "meta": {
+            "carCount": "335,7",
+            "postionByCarCount": 21
+        }
+    },
+    {
+        "id": 49,
+        "name": "Курская область",
+        "codes": ["46"],
+        "meta": {
+            "carCount": "314,2",
+            "postionByCarCount": 40
+        }
+    },
+    {
+        "id": 50,
+        "name": "Ленинградская область",
+        "codes": ["47", "147"],
+        "meta": {
+            "carCount": "320,8",
+            "postionByCarCount": 28
+        }
+    },
+    {
+        "id": 51,
+        "name": "Липецкая область",
+        "codes": ["48"],
+        "meta": {
+            "carCount": "336,1",
+            "postionByCarCount": 20
+        }
+    },
+    {
+        "id": 52,
+        "name": "Магаданская область",
+        "codes": ["49"],
+        "meta": {
+            "carCount": "378,1",
+            "postionByCarCount": 11
+        }
+    },
+    {
+        "id": 53,
+        "name": "Московская область",
+        "codes": ["50", "90", "150", "190", "750", "790"],
+        "meta": {
+            "carCount": "346,3",
+            "postionByCarCount": 16
+        }
+    },
+    {
+        "id": 54,
+        "name": "Мурманская область",
+        "codes": ["51"],
+        "meta": {
+            "carCount": "316,7",
+            "postionByCarCount": 34
+        }
+    },
+    {
+        "id": 55,
+        "name": "Нижегородская область",
+        "codes": ["52", "152"],
+        "meta": {
+            "carCount": "341,1",
+            "postionByCarCount": 19
+        }
+    },
+    {
+        "id": 56,
+        "name": "Новгородская область",
+        "codes": ["53"],
+        "meta": {
+            "carCount": "317,9",
+            "postionByCarCount": 31
+        }
+    },
+    {
+        "id": 57,
+        "name": "Новосибирская область",
+        "codes": ["54", "154"],
+        "meta": {
+            "carCount": "317,6",
+            "postionByCarCount": 32
+        }
+    },
+    {
+        "id": 57,
+        "name": "Омская область",
+        "codes": ["55"],
+        "meta": {
+            "carCount": "262,7",
+            "postionByCarCount": 67
+        }
+    },
+    {
+        "id": 58,
+        "name": "Оренбургская область",
+        "codes": ["56"],
+        "meta": {
+            "carCount": "363,8",
+            "postionByCarCount": 13
+        }
+    },
+    {
+        "id": 59,
+        "name": "Орловская область",
+        "codes": ["57"],
+        "meta": {
+            "carCount": "327,8",
+            "postionByCarCount": 22
+        }
+    },
+    {
+        "id": 60,
+        "name": "Пензенская область",
+        "codes": ["58"],
+        "meta": {
+            "carCount": "319,6",
+            "postionByCarCount": 30
+        }
+    },
+    {
+        "id": 61,
+        "name": "Псковская область",
+        "codes": ["60"],
+        "meta": {
+            "carCount": "384,5",
+            "postionByCarCount": 7
+        }
+    },
+    {
+        "id": 62,
+        "name": "Ростовская область",
+        "codes": ["61", "161", "761"],
+        "meta": {
+            "carCount": "322,5",
+            "postionByCarCount": 27
+        }
+    },
+    {
+        "id": 63,
+        "name": "Рязанская область",
+        "codes": ["62"],
+        "meta": {
+            "carCount": "378,2",
+            "postionByCarCount": 10
+        }
+    },
+    {
+        "id": 64,
+        "name": "Самарская область",
+        "codes": ["63", "163", "763"],
+        "meta": {
+            "carCount": "310,7",
+            "postionByCarCount": 42
+        }
+    },
+    {
+        "id": 65,
+        "name": "Саратовская область",
+        "codes": ["64", "164"],
+        "meta": {
+            "carCount": "327,3",
+            "postionByCarCount": 24
+        }
+    },
+    {
+        "id": 66,
+        "name": "Сахалинская область",
+        "codes": ["65"],
+        "meta": {
+            "carCount": "335,7",
+            "postionByCarCount": 21
+        }
+    },
+    {
+        "id": 67,
+        "name": "Свердловская область",
+        "codes": ["66", "96", "196"],
+        "meta": {
+            "carCount": "383,1",
+            "postionByCarCount": 8
+        }
+    },
+    {
+        "id": 68,
+        "name": "Смоленская область",
+        "codes": ["67"],
+        "meta": {
+            "carCount": "246,2",
+            "postionByCarCount": 71
+        }
+    },
+    {
+        "id": 69,
+        "name": "Тамбовская область",
+        "codes": ["68"],
+        "meta": {
+            "carCount": "314,8",
+            "postionByCarCount": 38
+        }
+    },
+    {
+        "id": 70,
+        "name": "Тверская область",
+        "codes": ["69"],
+        "meta": {
+            "carCount": "396,1",
+            "postionByCarCount": 5
+        }
+    },
+    {
+        "id": 71,
+        "name": "Томская область",
+        "codes": ["70"],
+        "meta": {
+            "carCount": "280,3",
+            "postionByCarCount": 59
+        }
+    },
+    {
+        "id": 72,
+        "name": "Тульская область",
+        "codes": ["71"],
+        "meta": {
+            "carCount": "351,1",
+            "postionByCarCount": 14
+        }
+    },
+    {
+        "id": 73,
+        "name": "Тюменская область",
+        "codes": ["72"],
+        "meta": {
+            "carCount": "328,9",
+            "postionByCarCount": "--"
+        }
+    },
+    {
+        "id": 74,
+        "name": "Ульяновская область",
+        "codes": ["73", "173"],
+        "meta": {
+            "carCount": "290,9",
+            "postionByCarCount": 55
+        }
+    },
+    {
+        "id": 75,
+        "name": "Челябинская область",
+        "codes": ["74", "174"],
+        "meta": {
+            "carCount": "312,1",
+            "postionByCarCount": 41
+        }
+    },
+    {
+        "id": 76,
+        "name": "Ярославская область",
+        "codes": ["76"],
+        "meta": {
+            "carCount": "269,8",
+            "postionByCarCount": 63
+        }
+    },
+    {
+        "id": 77,
+        "name": "Москва",
+        "codes": ["77", "97", "99", "177", "197", "199", "777", "799"],
+        "meta": {
+            "carCount": "296,2",
+            "postionByCarCount": 49
+        }
+    },
+    {
+        "id": 78,
+        "name": "Санкт-Петербург",
+        "codes": ["78", "98", "178", "198"],
+        "meta": {
+            "carCount": "301,6",
+            "postionByCarCount": 46
+        }
+    },
+    {
+        "id": 79,
+        "name": "Севастополь",
+        "codes": ["92"],
+        "meta": {
+            "carCount": "292,9",
+            "postionByCarCount": 52
+        }
+    },
+    {
+        "id": 80,
+        "name": "Еврейская автономная область",
+        "codes": ["79"],
+        "meta": {
+            "carCount": "227,9",
+            "postionByCarCount": 74
+        }
+    },
+    {
+        "id": 81,
+        "name": "Ненецкий автономный округ",
+        "codes": ["83"],
+        "meta": {
+            "carCount": "201,9",
+            "postionByCarCount": 77
+        }
+    },
+    {
+        "id": 82,
+        "name": "Ханты-Мансийский автономный округ - Югра",
+        "codes": ["86", "186"],
+        "meta": {
+            "carCount": "344,0",
+            "postionByCarCount": 17
+        }
+    },
+    {
+        "id": 83,
+        "name": "Чукотский автономный округ",
+        "codes": ["87"],
+        "meta": {
+            "carCount": "109,5",
+            "postionByCarCount": 85
+        }
+    },
+    {
+        "id": 84,
+        "name": "Ямало-Ненецкий автономный округ",
+        "codes": ["89"],
+        "meta": {
+            "carCount": "317,3",
+            "postionByCarCount": 33
+        }
+    },
+    {
+        "id": 84,
+        "name": "Байконур и другие территории, находящиеся за пределами РФ",
+        "codes": ["94"],
+        "meta": {
+            "carCount": "--",
+            "postionByCarCount": "--"
+        }
+    }
+]

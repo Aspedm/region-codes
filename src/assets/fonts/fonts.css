@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'roadnumbersregular';
+    src: url('./roadnumbers.woff2') format('woff2'),
+         url('./roadnumbers.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
