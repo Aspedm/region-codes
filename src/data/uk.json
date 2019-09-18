@@ -1,1 +1,245 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "АР Крым",
+        "codes": ["AK"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Винницкая область",
+        "codes": ["AB"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Волынская область",
+        "codes": ["AC"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Днепропетровская область ",
+        "codes": ["AE"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Донецкая область",
+        "codes": ["AH"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Житомирская область",
+        "codes": ["АМ"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Закарпатская область",
+        "codes": ["AO"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Запорожская область",
+        "codes": ["AP"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Ивано-Франковская область",
+        "codes": ["AT"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Киев",
+        "codes": ["AA"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Киевская область",
+        "codes": ["АI"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Кировоградская область",
+        "codes": ["BA"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Луганская область",
+        "codes": ["BB"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Львовская область",
+        "codes": ["BC"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Николаевская область",
+        "codes": ["BE"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Одесская область",
+        "codes": ["BH"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Полтавская область",
+        "codes": ["BI"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Ровенская область",
+        "codes": ["BK"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 19,
+        "name": "Севастополь",
+        "codes": ["CH"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Сумская область",
+        "codes": ["BH"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 21,
+        "name": "Тернопольская область",
+        "codes": ["BO"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 22,
+        "name": "Харьковская область",
+        "codes": ["AX"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 22,
+        "name": "Херсонская область",
+        "codes": ["BT"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 23,
+        "name": "Хмельницкая область",
+        "codes": ["BX"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 24,
+        "name": "Черкасская область",
+        "codes": ["CA"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 25,
+        "name": "Черниговская область",
+        "codes": ["CB"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 26,
+        "name": "Черновицкая область",
+        "codes": ["CE"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    }
+]

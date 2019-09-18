@@ -1,21 +1,22 @@
 import React, {useState} from 'react';
-import { View,  Panel, PanelHeader, Search, List, Cell, Group } from '@vkontakte/vkui';
+import { Root, View, Panel, PanelHeader, Search, List, Cell } from '@vkontakte/vkui';
 
 // Components
 import RegionInfoModal from '../components/regionInfoModal';
+import SelectCountryFromList from '../components/countryList';
+import EmptyCountryList from '../components/emptyCountryList';
+import SelectCountry from '../components/selectCountry';
 
-// Data
-const ru = require('../data/ru.json');
-const uk = require('../data/uk.json');
+// Configs
+import { DEFAULT_COUNTRY, COUNTRY_LIST } from '../configs/country';
 
-const COUNTRY_MAP = {
-	ru,
-	uk,
-};
+const COUNTRY_VIEW = 'country-view';
 
 const home = ({ id }) => {
 	const [querySearch, setQuerySearch] = useState('');
 	const [popout, setPopout] = useState(null);
+	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
+	const [activeView, setActiveView] = useState(id);
 
 	/**
 	 * @param {Object} region
@@ -36,12 +37,14 @@ const home = ({ id }) => {
 	/**
 	 * @param {String} country
 	 */
-	const getRegionList = country => {
+	const getRegionList = () => {
 		const search = querySearch.toLowerCase();
-		const result = COUNTRY_MAP[country].filter(item => {
-			const codesString = item.codes.join(',');
+		const countryData = COUNTRY_LIST.find(item => item.key === countryCode);
+		
+		const result = countryData ? countryData.data.filter(item => {
+			const codesString = item.codes.join(',').toLowerCase();
 			return codesString.indexOf(search) > -1;
-		});
+		}) : [];
 
 		return result.map(item =>
 			<Cell 
@@ -56,31 +59,50 @@ const home = ({ id }) => {
 		)
 	};
 
-	const regionList = getRegionList('ru');
+	const regionList = getRegionList();
+	const listIsEmpty = regionList.length === 0;
 
 	return (
-		<View id={id} activePanel={id} popout={popout}>
-			<Panel id={id}>
-				<PanelHeader noShadow>Коды регионов</PanelHeader>
-				<Search
-					value={querySearch}
-					onChange={searchOnChange}
-					placeholder="Введите номер региона"
-				/>
-				{regionList.length > 0 && 
-					<List>
-						{regionList}
-					</List>
-				}
+		<Root activeView={activeView}>
+			<View id={id} activePanel={id} popout={popout}>
+				<Panel id={id}>
+					<PanelHeader noShadow>Коды регионов</PanelHeader>
 
-				{regionList.length === 0 &&
-					<Group 
-						title="Введенный код региона не найден" 
-						description="В списке представленны коды регинов ГИБДД, на сентябрь 2019 года." 
+					<Search
+						value={querySearch}
+						onChange={searchOnChange}
+						placeholder="Введите номер региона"
 					/>
-				}
-			</Panel>
-		</View>
+
+					<SelectCountry 
+						setActiveView={setActiveView}
+						countryViewName={COUNTRY_VIEW}
+						selectedCountry={countryCode}
+					/>
+
+					{!listIsEmpty && 
+						<List>
+							{regionList}
+						</List>
+					}
+
+					{listIsEmpty && <EmptyCountryList /> }
+				</Panel>
+			</View>
+
+			<View id={COUNTRY_VIEW} activePanel={COUNTRY_VIEW}>
+				<Panel id={COUNTRY_VIEW}>
+					<PanelHeader noShadow>Выбор страны</PanelHeader>
+
+					<SelectCountryFromList 
+						setCountryCode={setCountryCode}
+						setActiveView={setActiveView}
+						regionViewName={id}
+						selectedCountry={countryCode}
+					/>
+				</Panel>
+			</View>
+		</Root>
 	)
 };
 

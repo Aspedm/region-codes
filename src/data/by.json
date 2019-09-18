@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Брестская область",
+        "codes": ["1"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Витебская область",
+        "codes": ["2"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Гомельская область",
+        "codes": ["3"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Гродненская область",
+        "codes": ["4"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Минская область",
+        "codes": ["5"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Могилёвская область",
+        "codes": ["6"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 7,
+        "name": "г. Минск",
+        "codes": ["7"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    }
+]

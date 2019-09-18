@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Ташкент",
+        "codes": ["01"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ташкентская область",
+        "codes": ["10-19"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Сырдарьинская область",
+        "codes": ["20-24"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Джизакская область",
+        "codes": ["25-29"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Самаркандская область",
+        "codes": ["30-39"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Ферганская область",
+        "codes": ["40-49"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Наманганская область",
+        "codes": ["50-59"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Андижанская область",
+        "codes": ["60-69"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Кашкадарьинская область",
+        "codes": ["70-74"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 10,
+        "name": "Сурхандарьинская область",
+        "codes": ["75-79"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Бухарская область",
+        "codes": ["80-84"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Навоийская область",
+        "codes": ["85-89"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 13,
+        "name": "Хорезмская область",
+        "codes": ["90-94"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Республика Каракалпакстан",
+        "codes": ["95-99"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---"
+        }
+    }
+]
