@@ -79,4 +79,4 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-* Tagir Hadzhiev - aspedm@me.com
+* Tagir Hadzhiev - asped@me.com
