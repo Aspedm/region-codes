@@ -17,7 +17,14 @@ const RegionInfoModal = ({ setPopout, region }) => {
     const [activeTab, setActiveTab] = useState(INFO_TAB);
 
     const getRegionPhones = () => {
-        const phones = get(region , 'meta.phones', ['Нет информации']);
+        const phones = get(region , 'meta.phones', null);
+
+        if (!phones) {
+            return <Cell
+            >
+                Нет информации
+            </Cell>
+        }
 
         return phones.map((item, index) => 
             <Cell
