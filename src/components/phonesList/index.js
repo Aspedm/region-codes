@@ -29,7 +29,7 @@ const PhonesList = ({ region }) => {
     const regionPhones = getRegionPhones();
 
     return (
-        <Group title="Тел. дежурной части гибдд" description="Для звонка ножмите на номер телефона">
+        <Group title="Тел. дежурной части гибдд" description="Для звонка нажмите на номер телефона">
             <List>
                 {regionPhones} 
             </List>
