@@ -55,7 +55,7 @@ const note = ({ id }) => {
             <Panel id={id}>
                 <PanelHeader>Заметки</PanelHeader>
 
-                <Group title="Заметки о автомобильных номерах" description="Описаны автомобильные номера РФ">
+                <Group title="Заметки об автомобильных номерах" description="Описаны автомобильные номера РФ">
                     <List>
                         {noteList}
                     </List>
