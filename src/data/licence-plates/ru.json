@@ -126,7 +126,7 @@
         "meta": {
             "carCount": "248,1",
             "postionByCarCount": 70,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -496,7 +496,7 @@
         "meta": {
             "carCount": "320,8",
             "postionByCarCount": 28,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -536,7 +536,7 @@
         "meta": {
             "carCount": "316,7",
             "postionByCarCount": 34,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -636,7 +636,7 @@
         "meta": {
             "carCount": "378,2",
             "postionByCarCount": 10,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -646,7 +646,7 @@
         "meta": {
             "carCount": "310,7",
             "postionByCarCount": 42,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -846,7 +846,7 @@
         "meta": {
             "carCount": "317,3",
             "postionByCarCount": 33,
-            "phones": ["---"]
+            "phones": null
         }
     },
     {
@@ -856,7 +856,7 @@
         "meta": {
             "carCount": "--",
             "postionByCarCount": "--",
-            "phones": ["---"]
+            "phones": null
         }
     }
 ]

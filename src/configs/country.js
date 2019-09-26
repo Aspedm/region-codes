@@ -1,7 +1,7 @@
-const ru = require('../data/ru.json');
-const uk = require('../data/uk.json');
-const uz = require('../data/uz.json');
-const by = require('../data/by.json');
+const ru = require('../data/licence-plates/ru.json');
+const uk = require('../data/licence-plates/uk.json');
+const uz = require('../data/licence-plates/uz.json');
+const by = require('../data/licence-plates/by.json');
 
 export const COUNTRY_LIST = [
     {

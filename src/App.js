@@ -9,6 +9,7 @@ import './assets/styles/main.scss';
 // Views
 import Home from './panels/Home';
 import Note from './panels/Note';
+import Fines from './panels/Fines';
 
 // Components
 import Tabbar from './components/tabbar';
@@ -53,9 +54,14 @@ const App = () => {
 	};
 
 	return (
-		<Epic activeStory={story} tabbar={<Tabbar go={updateStory} selected={story} />}>
+		<Epic 
+			activeStory={story} 
+			tabbar={
+				<Tabbar go={updateStory} selected={story} />
+			}>
 			<Note id="note" />
 			<Home id="home" />
+			<Fines id="fines" />
 		</Epic>
 	);
 }
