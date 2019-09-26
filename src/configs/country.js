@@ -16,7 +16,7 @@ export const COUNTRY_LIST = [
     },
     {
         key: 'uz',
-        name: 'Узбекистам',
+        name: 'Узбекистан',
         data: uz,
     },
     {
