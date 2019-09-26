@@ -3,15 +3,14 @@
     //
     &--ios {
         background: none!important;
-    }
-}
-
-.TabsItem {
-    //
-    &--selected {
-        //
-        .TabsItem__in {
-            color: #ffffff;
+        .TabsItem {
+            //
+            &--selected {
+                //
+                .TabsItem__in {
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
