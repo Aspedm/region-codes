@@ -15,7 +15,16 @@ const FinesDetail = ({ item }) => {
                 <List>
                     <Cell multiline>
                         <InfoRow title="Правонарушение">
-                            {item.articleText}
+                            <ReactMarkdown 
+                                source={item.articleText} 
+                                escapeHtml={false} 
+                                disallowedTypes={[
+                                    'link',
+                                    'image',
+                                    'linkReference',
+                                    'imageReference',
+                                ]} 
+                            />
                         </InfoRow>
                     </Cell>
 
