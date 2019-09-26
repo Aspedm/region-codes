@@ -6,7 +6,6 @@ import Icon24Dismiss from '@vkontakte/icons/dist/24/dismiss';
 import Icon24Cancel from '@vkontakte/icons/dist/24/cancel';
 
 // Components
-import RoadNumber from '../roadNumber';
 import PhonesList from '../phonesList';
 
 const INFO_MODAL_ID = 'info-modal';
@@ -30,46 +29,45 @@ const RegionInfoModal = ({ setPopout, region }) => {
                     </ModalPageHeader>
                 }
             >
-                <RoadNumber code={region.codes[0]} />
 
-                <Div>
-                    <Tabs theme="light">
-                        <TabsItem
-                            onClick={() => setActiveTab(INFO_TAB)}
-                            selected={activeTab === INFO_TAB}
+            <Div>
+                <Tabs theme="light">
+                    <TabsItem
+                        onClick={() => setActiveTab(INFO_TAB)}
+                        selected={activeTab === INFO_TAB}
+                    >
+                        О регионе
+                    </TabsItem>
+
+                    <TabsItem
+                        onClick={() => setActiveTab(PHONES_TAB)}
+                        selected={activeTab === PHONES_TAB}
+                    >
+                        Номера телефонов
+                    </TabsItem>
+                </Tabs>
+            </Div>
+
+            {activeTab === INFO_TAB &&
+                <Group title="Статистика по региону" description="Учитываются только леговые автомобили. Дата обновления: 25.06.2019">
+                    <List>
+                        <Cell 
+                            description="На 1000 человек."
+                            indicator={<Counter type="primary">{region.meta.carCount}</Counter>}
                         >
-                            О регионе
-                        </TabsItem>
-
-                        <TabsItem
-                            onClick={() => setActiveTab(PHONES_TAB)}
-                            selected={activeTab === PHONES_TAB}
+                            Кол-во машин
+                        </Cell>
+                        <Cell 
+                            description="По кол-ву машин."
+                            indicator={<Counter type="primary">{region.meta.postionByCarCount}</Counter>}
                         >
-                            Номера телефонов
-                        </TabsItem>
-                    </Tabs>
-                </Div>
+                            Занимаемое место
+                        </Cell>
+                    </List>
+                </Group>
+            }
 
-                {activeTab === INFO_TAB &&
-                    <Group title="Статистика по региону" description="Учитываются только леговые автомобили. Дата обновления: 25.06.2019">
-                        <List>
-                            <Cell 
-                                description="На 1000 человек."
-                                indicator={<Counter type="primary">{region.meta.carCount}</Counter>}
-                            >
-                                Кол-во машин
-                            </Cell>
-                            <Cell 
-                                description="По кол-ву машин."
-                                indicator={<Counter type="primary">{region.meta.postionByCarCount}</Counter>}
-                            >
-                                Занимаемое место
-                            </Cell>
-                        </List>
-                    </Group>
-                }
-
-                {activeTab === PHONES_TAB && <PhonesList region={region} />}
+            {activeTab === PHONES_TAB && <PhonesList region={region} />}
             </ModalPage>
         </ModalRoot>
     );
