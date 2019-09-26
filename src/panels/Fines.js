@@ -55,7 +55,7 @@ const Fines = ({ id }) => {
                 <PanelHeader
                     left={<HeaderButton onClick={openCheckFinesApp}><Icon24View/></HeaderButton>}
                 >
-                    Штрафы ПДД
+                    КоАП РФ
                 </PanelHeader>
 
                 <Group title="Что мне грозит за:">
