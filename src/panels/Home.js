@@ -71,6 +71,7 @@ const home = ({ id }) => {
 					<Search
 						value={querySearch}
 						onChange={searchOnChange}
+						maxLength="6"
 						placeholder="Введите номер региона"
 					/>
 

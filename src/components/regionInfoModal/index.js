@@ -49,7 +49,7 @@ const RegionInfoModal = ({ setPopout, region }) => {
             </Div>
 
             {activeTab === INFO_TAB &&
-                <Group title="Статистика по региону" description="Учитываются только леговые автомобили. Дата обновления: 25.06.2019">
+                <Group title="Статистика по региону" description="Учитываются только легковые автомобили. Дата обновления: 25.06.2019">
                     <List>
                         <Cell 
                             description="На 1000 человек."

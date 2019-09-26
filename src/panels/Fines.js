@@ -58,7 +58,7 @@ const Fines = ({ id }) => {
                     КоАП РФ
                 </PanelHeader>
 
-                <Group title="Что мне грозит за:">
+                <Group title="Тематика">
                     <List>
                         {finesList}
                     </List>
