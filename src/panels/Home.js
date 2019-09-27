@@ -42,6 +42,8 @@ const home = ({ id }) => {
 		const countryData = COUNTRY_LIST.find(item => item.key === countryCode);
 		
 		const result = countryData ? countryData.data.filter(item => {
+			if (!search.replace(/\s/g, '').length) return item;
+
 			const codesString = item.codes.join(',').toLowerCase();
 			return codesString.indexOf(search) > -1;
 		}) : [];
