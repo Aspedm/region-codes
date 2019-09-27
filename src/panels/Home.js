@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Root, View, Panel, PanelHeader, Search, List, Cell } from '@vkontakte/vkui';
+import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
 // Components
 import RegionInfoModal from '../components/regionInfoModal';
@@ -95,7 +96,12 @@ const home = ({ id }) => {
 
 			<View id={COUNTRY_VIEW} activePanel={COUNTRY_VIEW}>
 				<Panel id={COUNTRY_VIEW}>
-					<PanelHeader noShadow>Выбор страны</PanelHeader>
+					<PanelHeader 
+						noShadow
+						left={<PanelHeaderBack onClick={() => setActiveView(id)} />}
+					>
+						Выбор страны
+					</PanelHeader>
 
 					<SelectCountryFromList 
 						setCountryCode={setCountryCode}
