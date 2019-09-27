@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
-import Icon24View from '@vkontakte/icons/dist/24/view';
 
 // Components
 import FinesDetail from '../components/finesDetail';
@@ -56,7 +55,7 @@ const Fines = ({ id }) => {
                 <PanelHeader
                     left={
                         <HeaderButton onClick={openCheckFinesApp}>
-                            <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" />
+                            <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
                         </HeaderButton>
                     }
                 >
