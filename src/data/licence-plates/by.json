@@ -4,8 +4,9 @@
         "name": "Брестская область",
         "codes": ["1"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "325",
+            "postionByCarCount": "3",
+            "phones": ["8-0162 23-62-62"]
         }
     },
     {
@@ -13,8 +14,9 @@
         "name": "Витебская область",
         "codes": ["2"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "304",
+            "postionByCarCount": "5",
+            "phones": ["+375 212 58-44-44"]
         }
     },
     {
@@ -22,8 +24,9 @@
         "name": "Гомельская область",
         "codes": ["3"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "271",
+            "postionByCarCount": "7",
+            "phones": ["+375 232 70-41-16"]
         }
     },
     {
@@ -31,8 +34,9 @@
         "name": "Гродненская область",
         "codes": ["4"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "355",
+            "postionByCarCount": "1",
+            "phones": ["+375 152 79-75-04"]
         }
     },
     {
@@ -40,8 +44,9 @@
         "name": "Минская область",
         "codes": ["5"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "332",
+            "postionByCarCount": "2",
+            "phones": ["+375 17 511-35-60"]
         }
     },
     {
@@ -49,8 +54,9 @@
         "name": "Могилёвская область",
         "codes": ["6"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "286",
+            "postionByCarCount": "6",
+            "phones": ["8-02243 7-33-88"]
         }
     },
     {
@@ -58,8 +64,9 @@
         "name": "г. Минск",
         "codes": ["7"],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": "320",
+            "postionByCarCount": "4",
+            "phones": ["+375 17 222-17-17"]
         }
     }
 ]
