@@ -11,6 +11,7 @@ import FinesDetail from '../components/finesDetail';
 const finesData = require('../data/fines/ru.json');
 
 const FINES_APP_ID = 6253254;
+const FINES_APP_ICON = 'https://sun9-7.userapi.com/c848520/v848520804/1d16eb/YrT2oK8WQMI.jpg';
 const FINES_DETAIL_PANEL = 'fines-detail-panel';
 
 const Fines = ({ id }) => {
@@ -53,7 +54,11 @@ const Fines = ({ id }) => {
         <View id={id} activePanel={activePanel}>
             <Panel id={id}>
                 <PanelHeader
-                    left={<HeaderButton onClick={openCheckFinesApp}><Icon24View/></HeaderButton>}
+                    left={
+                        <HeaderButton onClick={openCheckFinesApp}>
+                            <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" />
+                        </HeaderButton>
+                    }
                 >
                     КоАП РФ
                 </PanelHeader>
