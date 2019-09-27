@@ -3,3 +3,13 @@
     border-radius: 4px;
     margin-left: 16px;
 }
+
+.HeaderButton {
+    //
+    &--android {
+        .openFinesAppIcon {
+            margin-top: 12px;
+            margin-left: 0px;
+        }
+    }
+}
