@@ -50,6 +50,11 @@ const App = () => {
 	const updateStory = event => {
 		const story = get(event, 'currentTarget.dataset.story', DEFAULT_STORY);
 
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+
 		return setStory(story);
 	};
 
