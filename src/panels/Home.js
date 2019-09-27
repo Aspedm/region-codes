@@ -54,7 +54,7 @@ const home = ({ id }) => {
 				multiline
 				expandable
 				key={item.name}
-				description={`Код региона: ${item.codes.join(',')}`}
+				description={`Код региона: ${item.codes.join(', ')}`}
 				onClick={() => showRegionInfo(item)}
 			>
 				{item.name}

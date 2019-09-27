@@ -7,3 +7,7 @@
 
 // Components
 @import './components/roadNumber.scss';
+
+a {
+    color: var(--text_primary);
+}

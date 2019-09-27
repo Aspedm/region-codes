@@ -28,7 +28,7 @@ const withoutFlagLicensePlates = () => (
 
         <img src="https://avatars.mds.yandex.net/get-zen_doc/44972/pub_5c25c6057a90a300abfc3eb9_5c25c6110cfbc500ab75ee37/scale_1200" alt="" />
 
-        Источник: <a href="https://www.rudorogi.ru/articles/traffic-laws/car-numbers-without-flag.html">RuDorogi.ru</a>
+        Источник: <a href="https://www.rudorogi.ru/articles/traffic-laws/car-numbers-without-flag.html" target="_blank" rel="noopener noreferrer">RuDorogi.ru</a>
     </Div>
 );
 
