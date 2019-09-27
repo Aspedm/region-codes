@@ -37,7 +37,12 @@ const App = () => {
 					console.log('vkConnectEvent', e.detail.type);
 					break;
 			}
-		});		 
+		});
+
+		vkConnect.send('VKWebAppSetViewSettings', {
+			status_bar_style: 'light', 
+			action_bar_color: '#8b44f7',
+		});
 
 		return () => {
 			vkConnect.unsubscribe(vkEvents);
