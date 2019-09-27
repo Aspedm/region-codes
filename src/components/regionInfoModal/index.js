@@ -20,6 +20,7 @@ const RegionInfoModal = ({ setPopout, region }) => {
             <ModalPage
                 id={INFO_MODAL_ID}
                 onClose={() => setPopout(null)}
+                dynamicContentHeight={true}
                 header={
                     <ModalPageHeader
                         left={IS_PLATFORM_ANDROID && <HeaderButton onClick={() => setPopout(null)}><Icon24Cancel /></HeaderButton>}
