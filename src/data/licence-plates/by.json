@@ -6,7 +6,7 @@
         "meta": {
             "carCount": "325",
             "postionByCarCount": "3",
-            "phones": ["8-0162 23-62-62"]
+            "phones": ["+375 162 23-62-62"]
         }
     },
     {
@@ -56,7 +56,7 @@
         "meta": {
             "carCount": "286",
             "postionByCarCount": "6",
-            "phones": ["8-02243 7-33-88"]
+            "phones": ["+375 222 48-44-44"]
         }
     },
     {
@@ -67,6 +67,26 @@
             "carCount": "320",
             "postionByCarCount": "4",
             "phones": ["+375 17 222-17-17"]
+        }
+    },
+    {
+        "id": 9,
+        "name": "Транзитные номера",
+        "codes": ["8"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---",
+            "phones": null
+        }
+    },
+    {
+        "id": 8,
+        "name": "Министерство обороны или МВД РБ",
+        "codes": ["0"],
+        "meta": {
+            "carCount": "---",
+            "postionByCarCount": "---",
+            "phones": null
         }
     }
 ]
