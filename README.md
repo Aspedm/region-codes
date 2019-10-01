@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://vk.com/app7139021">
-    <img src="https://sun9-47.userapi.com/c853520/v853520814/ff976/X-1kHdDrkBk.jpg" alt="Logo" width="80" height="80">
+    <img src="https://sun9-47.userapi.com/c853520/v853520814/ff976/X-1kHdDrkBk.jpg" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">VK mini apps</h3>
@@ -20,7 +20,7 @@
 
 ## About The Project
 
-![](https://sun9-8.userapi.com/c858432/v858432894/732a8/hYD6l_zJT94.jpg) | ![](https://sun9-37.userapi.com/c858432/v858432894/732ae/uHSNQ6d9Zsc.jpg)
+![](https://sun9-62.userapi.com/c854016/v854016086/11152b/P4-hBrtgC1M.jpg) | ![](https://sun9-43.userapi.com/c854016/v854016086/111531/2UxJhsNjRmw.jpg)
 ---|---
 
 Simple react application for russian social network VK.com

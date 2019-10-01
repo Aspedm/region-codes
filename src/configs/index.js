@@ -1,0 +1,1 @@
+export const DARK_THEME_IDS = ['client_dark', 'space_gray'];

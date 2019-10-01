@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Root, View, Panel, PanelHeader, Search, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
@@ -18,6 +18,10 @@ const home = ({ id }) => {
 	const [popout, setPopout] = useState(null);
 	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
 	const [activeView, setActiveView] = useState(id);
+
+	useEffect(() => {
+		if (querySearch) return setQuerySearch('');
+	}, [activeView]);
 
 	/**
 	 * @param {Object} region

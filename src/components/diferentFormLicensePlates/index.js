@@ -14,7 +14,7 @@ const licencePlateList = [
         image: DefaultImage,
     },
     {
-        name: 'Трактора',
+        name: 'Тракторы',
         image: TractorImage,
     },
     {

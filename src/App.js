@@ -14,6 +14,9 @@ import Fines from './panels/Fines';
 // Components
 import Tabbar from './components/tabbar';
 
+// helpers
+import { isDark } from './helpers';
+
 const DEFAULT_STORY = 'home';
 
 const App = () => {
@@ -21,8 +24,16 @@ const App = () => {
 
 	/**
 	 * @param {String} scheme
+	 * @returns {undefined}
 	 */
 	const VKWebAppUpdateConfig = scheme => {
+		if (!isDark(scheme)) {
+			vkConnect.send('VKWebAppSetViewSettings', {
+				status_bar_style: 'light', 
+				action_bar_color: '#8b44f7',
+			});
+		}
+
 		return document.getElementsByTagName('body')[0].setAttribute('scheme', scheme);
 	}
 
@@ -37,11 +48,6 @@ const App = () => {
 					console.log('vkConnectEvent', e.detail.type);
 					break;
 			}
-		});
-
-		vkConnect.send('VKWebAppSetViewSettings', {
-			status_bar_style: 'light', 
-			action_bar_color: '#8b44f7',
 		});
 
 		return () => {
