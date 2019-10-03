@@ -26,7 +26,13 @@ const DutyTrafficPoliceAdress = ({ region }) => {
     return (
         <List>
             {region.meta.adress &&
-                <Cell multiline>
+                <Cell 
+                    multiline
+                    expandable={true}
+                    href={`https://www.google.ru/maps/search/${region.meta.adress}/`}
+                    target="_blank"
+                    rel="nofollow noopener"
+                >
                     <InfoRow title="Адрес">
                         {region.meta.adress}
                     </InfoRow>
