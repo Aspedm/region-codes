@@ -7,9 +7,11 @@ import RegionInfoModal from '../components/regionInfoModal';
 import SelectCountryFromList from '../components/countryList';
 import EmptyCountryList from '../components/emptyCountryList';
 import SelectCountry from '../components/selectCountry';
+import SearchAlert from '../components/searchAlert';
 
 // Configs
 import { DEFAULT_COUNTRY, COUNTRY_LIST } from '../configs/country';
+import { MAX_SEARCH_LENGTH } from '../configs';
 
 const COUNTRY_VIEW = 'country-view';
 
@@ -33,10 +35,26 @@ const home = ({ id }) => {
 	};
 
 	/**
+	 * @param {String} query
+	 * @returns {*}
+	 */
+	const validateSearchQuery = query => {
+		if (!query.length) return true;
+		if (!query.replace(/\s/g, '').length) return false;
+		if (query.length > MAX_SEARCH_LENGTH) return setPopout(
+			<SearchAlert setPopout={setPopout} />
+		);
+
+		return true;
+	};
+
+	/**
 	 * @param {String} query 
 	 */
 	const searchOnChange = query => {
-		setQuerySearch(query);
+		if (validateSearchQuery(query)) return setQuerySearch(query);
+
+		return false;
 	};
 
 	/**
@@ -47,10 +65,8 @@ const home = ({ id }) => {
 		const countryData = COUNTRY_LIST.find(item => item.key === countryCode);
 		
 		const result = countryData ? countryData.data.filter(item => {
-			if (!search.replace(/\s/g, '').length) return item;
-
-			const codesString = item.codes.join(',').toLowerCase();
-			return codesString.indexOf(search) > -1;
+			const tags = item.tags.join(',').toLowerCase();
+			return tags.indexOf(search) > -1;
 		}) : [];
 
 		return result.map(item =>
@@ -78,7 +94,7 @@ const home = ({ id }) => {
 					<Search
 						value={querySearch}
 						onChange={searchOnChange}
-						maxLength="6"
+						// maxLength="6"
 						placeholder="Введите номер региона"
 					/>
 
