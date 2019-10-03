@@ -8,10 +8,11 @@ import Icon24Cancel from '@vkontakte/icons/dist/24/cancel';
 
 // Components
 import PhonesList from '../phonesList';
+import AdressList from '../dutyTrafficPoliceAdress';
 
 const INFO_MODAL_ID = 'info-modal';
 const INFO_TAB = 'info';
-const PHONES_TAB = 'phones';
+const TRAFFIC_POLICE = 'traffic-police';
 
 const RegionInfoModal = ({ setPopout, region }) => {
     const [activeTab, setActiveTab] = useState(INFO_TAB);
@@ -54,10 +55,10 @@ const RegionInfoModal = ({ setPopout, region }) => {
                     </TabsItem>
 
                     <TabsItem
-                        onClick={() => setActiveTab(PHONES_TAB)}
-                        selected={activeTab === PHONES_TAB}
+                        onClick={() => setActiveTab(TRAFFIC_POLICE)}
+                        selected={activeTab === TRAFFIC_POLICE}
                     >
-                        Номера телефонов
+                        Дежурная часть
                     </TabsItem>
                 </Tabs>
             </Div>
@@ -83,7 +84,7 @@ const RegionInfoModal = ({ setPopout, region }) => {
 
                     {statsIsEmpty &&
                         <Div>
-                            <InfoRow>
+                            <InfoRow title="">
                                 Для данного региона статистика недоступна.
                             </InfoRow>
                         </Div>
@@ -91,7 +92,12 @@ const RegionInfoModal = ({ setPopout, region }) => {
                 </Group>
             }
 
-            {activeTab === PHONES_TAB && <PhonesList region={region} />}
+            {activeTab === TRAFFIC_POLICE &&
+                <Group title="Информация">
+                    <PhonesList region={region} />
+                    <AdressList region={region} />
+                </Group>
+            }
             </ModalPage>
         </ModalRoot>
     );

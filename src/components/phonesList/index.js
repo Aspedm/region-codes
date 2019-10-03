@@ -1,5 +1,6 @@
 import React from 'react';
-import { Group, List, Cell } from '@vkontakte/vkui';
+import PropTypes from 'prop-types';
+import { InfoRow, List, Cell } from '@vkontakte/vkui';
 import get from 'lodash/get';
 
 
@@ -21,7 +22,9 @@ const PhonesList = ({ region }) => {
                 expandable={true}
                 href={`tel:${item}`}
             >
-                {item}
+                <InfoRow title={index === 0 ? 'Телефон' : ''}>
+                    {item}
+                </InfoRow>
             </Cell>
         )
     };
@@ -29,12 +32,14 @@ const PhonesList = ({ region }) => {
     const regionPhones = getRegionPhones();
 
     return (
-        <Group title="Тел. дежурной части гибдд" description="Для звонка нажмите на номер телефона">
-            <List>
-                {regionPhones} 
-            </List>
-        </Group>
+        <List>
+            {regionPhones} 
+        </List>
     )
 };
+
+PhonesList.propTypes = {
+    region: PropTypes.object.isRequired,
+}
 
 export default PhonesList;
