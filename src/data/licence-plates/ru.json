@@ -1664,8 +1664,8 @@
             "94"
         ],
         "meta": {
-            "carCount": "--",
-            "postionByCarCount": "--",
+            "carCount": null,
+            "postionByCarCount": null,
             "phones": null
         },
         "tags": [

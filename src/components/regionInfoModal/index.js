@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { ModalRoot, ModalPage, ModalPageHeader, Group, List, Cell, Counter, HeaderButton, Tabs, TabsItem, Div } from '@vkontakte/vkui';
+import get from 'lodash/get';
+import { ModalRoot, ModalPage, ModalPageHeader, Group, List, Cell, Counter, HeaderButton, Tabs, TabsItem, Div, InfoRow } from '@vkontakte/vkui';
 import { IS_PLATFORM_ANDROID, IS_PLATFORM_IOS } from '@vkontakte/vkui/dist/lib/platform';
 import Icon24Dismiss from '@vkontakte/icons/dist/24/dismiss';
 import Icon24Cancel from '@vkontakte/icons/dist/24/cancel';
@@ -14,6 +15,18 @@ const PHONES_TAB = 'phones';
 
 const RegionInfoModal = ({ setPopout, region }) => {
     const [activeTab, setActiveTab] = useState(INFO_TAB);
+
+    /**
+     * @returns {Boolean}
+     */
+    const checkIsEmptyStat = () => {
+        const carCount = get(region, 'meta.carCount', null);
+        const postionByCarCount = get(region, 'meta.postionByCarCount', null);
+
+        return !carCount && !postionByCarCount;
+    };
+
+    const statsIsEmpty = checkIsEmptyStat();
 
     return (
         <ModalRoot activeModal={INFO_MODAL_ID}>
@@ -51,20 +64,30 @@ const RegionInfoModal = ({ setPopout, region }) => {
 
             {activeTab === INFO_TAB &&
                 <Group title="Статистика по региону" description="Учитываются только легковые автомобили. Дата обновления: 25.06.2019">
-                    <List>
-                        <Cell 
-                            description="На 1000 человек."
-                            indicator={<Counter type="primary">{region.meta.carCount}</Counter>}
-                        >
-                            Кол-во машин
-                        </Cell>
-                        <Cell 
-                            description="По кол-ву машин."
-                            indicator={<Counter type="primary">{region.meta.postionByCarCount}</Counter>}
-                        >
-                            Занимаемое место
-                        </Cell>
-                    </List>
+                    {!statsIsEmpty && 
+                        <List>
+                            <Cell 
+                                description="На 1000 человек."
+                                indicator={<Counter type="primary">{region.meta.carCount}</Counter>}
+                            >
+                                Кол-во машин
+                            </Cell>
+                            <Cell 
+                                description="По кол-ву машин."
+                                indicator={<Counter type="primary">{region.meta.postionByCarCount}</Counter>}
+                            >
+                                Занимаемое место
+                            </Cell>
+                        </List>
+                    }
+
+                    {statsIsEmpty &&
+                        <Div>
+                            <InfoRow>
+                                Для данного региона статистика недоступна.
+                            </InfoRow>
+                        </Div>
+                    }
                 </Group>
             }
 

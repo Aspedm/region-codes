@@ -132,8 +132,8 @@
             "8"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---",
+            "carCount": null,
+            "postionByCarCount": null,
             "phones": null
         },
         "tags": [
@@ -148,8 +148,8 @@
             "0"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---",
+            "carCount": null,
+            "postionByCarCount": null,
             "phones": null
         },
         "tags": [

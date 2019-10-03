@@ -6,8 +6,8 @@
             "01"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "01",
@@ -21,8 +21,8 @@
             "10-19"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "10",
@@ -45,8 +45,8 @@
             "20-24"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "20-24",
@@ -65,8 +65,8 @@
             "25-29"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "25-29",
@@ -85,8 +85,8 @@
             "30-39"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "30-39",
@@ -110,8 +110,8 @@
             "40-49"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "40-49",
@@ -135,8 +135,8 @@
             "50-59"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "50-59",
@@ -160,8 +160,8 @@
             "60-69"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "60-69",
@@ -185,8 +185,8 @@
             "70-74"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "70-74",
@@ -205,8 +205,8 @@
             "75-79"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "75-79",
@@ -225,8 +225,8 @@
             "80-84"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "80-84",
@@ -245,8 +245,8 @@
             "85-89"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "85-89",
@@ -265,8 +265,8 @@
             "90-94"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "90-94",
@@ -285,8 +285,8 @@
             "95-99"
         ],
         "meta": {
-            "carCount": "---",
-            "postionByCarCount": "---"
+            "carCount": null,
+            "postionByCarCount": null
         },
         "tags": [
             "95-99",
