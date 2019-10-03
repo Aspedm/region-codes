@@ -9,7 +9,7 @@ const FinesDetail = ({ item }) => {
     const getArticleList = () => {
         return item.offenseArticles.map(item => 
             <Group 
-                title={item.articleNumber} 
+                title={`Статья ${item.articleNumber}`} 
                 key={item.articleNumber}
             >
                 <List>
