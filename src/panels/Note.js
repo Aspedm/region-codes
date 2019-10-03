@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Panel, PanelHeader, Group, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
@@ -6,6 +6,9 @@ import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/Pan
 import ColorfulPanelContent from '../components/colorfulLicensePlates';
 import DiferentFormPanelContent from '../components/diferentFormLicensePlates';
 import WithoutFlagPanelConent from '../components/withoutFlagLicensePlates';
+
+// Helpers
+import { hideTabbar, showTabbar } from '../helpers';
 
 const COLORFUL_PANEL = 'colorful-reg-plates-panel';
 const FORM_PANEL = 'form-factor-panel';
@@ -34,6 +37,15 @@ const NOTE_LIST = [
 
 const note = ({ id }) => {
     const [activePanel, setActivePanel] = useState(id);
+
+    useEffect(() => {
+        
+        if (activePanel !== id) hideTabbar();
+
+        return () => {
+            showTabbar();
+        };
+    }, [activePanel]);
 
     const getNoteList = () => {
         return NOTE_LIST.map(item =>

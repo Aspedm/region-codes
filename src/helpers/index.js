@@ -10,3 +10,23 @@ export const isDark = scheme => {
 
     return DARK_THEME_IDS.indexOf(scheme) !== -1;
 };
+
+/**
+ * @returns {String}
+ */
+export const hideTabbar = () => {
+    const tabbar = document.getElementsByClassName('Tabbar')[0];
+    if (!tabbar) return '';
+
+    return tabbar.style.opacity = '0';
+}
+
+/**
+ * @returns {String}
+ */
+export const showTabbar = () => {
+    const tabbar = document.getElementsByClassName('Tabbar')[0];
+    if (!tabbar) return '';
+
+    return tabbar.style.opacity = '1';
+}

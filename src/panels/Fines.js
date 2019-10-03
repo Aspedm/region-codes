@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
 
 // Components
 import FinesDetail from '../components/finesDetail';
+
+// Helpers
+import { hideTabbar, showTabbar } from '../helpers';
 
 // Data
 const finesData = require('../data/fines/ru.json');
@@ -17,6 +20,15 @@ const Fines = ({ id }) => {
 
     const [activePanel, setActivePanel] = useState(id);
     const [detailPanelData, setDetailPanelData] = useState({});
+
+    useEffect(() => {
+        
+        if (activePanel !== id) hideTabbar();
+
+        return () => {
+            showTabbar();
+        };
+    }, [activePanel]);
 
     /**
      * @returns {ReactDOM}
