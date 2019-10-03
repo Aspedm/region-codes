@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Root, View, Panel, PanelHeader, Search, List, Cell } from '@vkontakte/vkui';
+import { Root, View, Panel, PanelHeader, Search, List, Cell, Group } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
 // Components
@@ -94,7 +94,6 @@ const home = ({ id }) => {
 					<Search
 						value={querySearch}
 						onChange={searchOnChange}
-						// maxLength="6"
 						placeholder="Введите номер региона"
 					/>
 
@@ -104,10 +103,12 @@ const home = ({ id }) => {
 						selectedCountry={countryCode}
 					/>
 
-					{!listIsEmpty && 
-						<List>
-							{regionList}
-						</List>
+					{!listIsEmpty &&
+						<Group>
+							<List>
+								{regionList}
+							</List>
+						</Group>
 					}
 
 					{listIsEmpty && <EmptyCountryList /> }
