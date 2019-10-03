@@ -7,6 +7,7 @@ import TaxiImage from '../../assets/images/license-plate-taxi.png';
 import ArmyImage from '../../assets/images/license-plate-army.png';
 import DiplomatImage from '../../assets/images/license-plate-diplomatic.png';
 import PoliceImage from '../../assets/images/license-plate-police.png';
+import TransitImage from '../../assets/images/license-plate-transit.png';
 
 const licencePlateList = [
     {
@@ -25,6 +26,10 @@ const licencePlateList = [
         name: 'ТС МВД России',
         image: PoliceImage,
     },
+    {
+        name: 'Транзитные ТС',
+        image: TransitImage,
+    }
 ];
 
 const colorfulLicensePlates = () => (
