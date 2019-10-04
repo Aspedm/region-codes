@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Root, View, Panel, PanelHeader, Search, List, Cell, Group } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
@@ -15,7 +16,7 @@ import { MAX_SEARCH_LENGTH } from '../configs';
 
 const COUNTRY_VIEW = 'country-view';
 
-const home = ({ id }) => {
+const Home = ({ id }) => {
 	const [querySearch, setQuerySearch] = useState('');
 	const [popout, setPopout] = useState(null);
 	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
@@ -136,4 +137,9 @@ const home = ({ id }) => {
 	)
 };
 
-export default home;
+Home.propTypes = {
+    id: PropTypes.string.isRequired,
+    scheme: PropTypes.string.isRequired,
+};
+
+export default Home;

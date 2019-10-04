@@ -16,11 +16,13 @@ import Tabbar from './components/tabbar';
 
 // helpers
 import { isDark } from './helpers';
+import { DEFAULT_COLOR_SCHEME } from './configs';
 
 const DEFAULT_STORY = 'home';
 
 const App = () => {
 	const [story, setStory] = useState(DEFAULT_STORY);
+	const [colorScheme, setColorScheme] = useState(DEFAULT_COLOR_SCHEME);
 
 	/**
 	 * @param {String} scheme
@@ -34,6 +36,7 @@ const App = () => {
 			});
 		}
 
+		setColorScheme(scheme);
 		return document.getElementsByTagName('body')[0].setAttribute('scheme', scheme);
 	}
 
@@ -75,9 +78,9 @@ const App = () => {
 			tabbar={
 				<Tabbar go={updateStory} selected={story} />
 			}>
-			<Note id="note" />
-			<Home id="home" />
-			<Fines id="fines" />
+			<Note id="note" scheme={colorScheme} />
+			<Home id="home" scheme={colorScheme} />
+			<Fines id="fines" scheme={colorScheme} />
 		</Epic>
 	);
 }

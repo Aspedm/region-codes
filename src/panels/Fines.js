@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
@@ -16,7 +17,7 @@ const FINES_APP_ID = 6253254;
 const FINES_APP_ICON = 'https://sun9-7.userapi.com/c848520/v848520804/1d16eb/YrT2oK8WQMI.jpg';
 const FINES_DETAIL_PANEL = 'fines-detail-panel';
 
-const Fines = ({ id }) => {
+const Fines = ({ id, scheme }) => {
 
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
@@ -98,7 +99,7 @@ const Fines = ({ id }) => {
     const finesList = getFinesList();
 
     return (
-        <ConfigProvider>
+        <ConfigProvider scheme={scheme}>
             <View 
                 id={id} 
                 activePanel={activePanel}
@@ -135,6 +136,11 @@ const Fines = ({ id }) => {
             </View>
         </ConfigProvider>
     )
+};
+
+Fines.propTypes = {
+    id: PropTypes.string.isRequired,
+    scheme: PropTypes.string.isRequired,
 };
 
 export default Fines;

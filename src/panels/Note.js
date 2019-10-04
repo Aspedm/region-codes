@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { View, Panel, PanelHeader, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
@@ -36,7 +37,7 @@ const NOTE_LIST = [
     }
 ]
 
-const note = ({ id }) => {
+const Note = ({ id, scheme }) => {
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
 
@@ -98,7 +99,7 @@ const note = ({ id }) => {
     const noteList = getNoteList();
 
     return (
-        <ConfigProvider>
+        <ConfigProvider scheme={scheme}>
             <View 
                 id={id} 
                 activePanel={activePanel}
@@ -142,4 +143,9 @@ const note = ({ id }) => {
     )
 };
 
-export default note;
+Note.propTypes = {
+    id: PropTypes.string.isRequired,
+    scheme: PropTypes.string.isRequired,
+};
+
+export default Note;
