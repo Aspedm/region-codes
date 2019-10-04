@@ -1,0 +1,320 @@
+[
+    {
+        "id": 1,
+        "name": "г. Астана",
+        "codes": [
+            "01",
+            "Z"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "01",
+            "Z",
+            "г. Астана"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "г. Алматы",
+        "codes": [
+            "02",
+            "A"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "02",
+            "A",
+            "г. Алматы"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Акмолинская область",
+        "codes": [
+            "03",
+            "C",
+            "W"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "03",
+            "C",
+            "W",
+            "Акмолинская область"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Актюбинская область",
+        "codes": [
+            "04",
+            "D"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "04",
+            "D",
+            "Актюбинская область"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Алматинская область",
+        "codes": [
+            "05",
+            "B",
+            "V"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "05",
+            "B",
+            "V",
+            "Алматинская область"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Атырауская область",
+        "codes": [
+            "06",
+            "E"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "06",
+            "E",
+            "Атырауская область"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Западно-Казахстанская область",
+        "codes": [
+            "07",
+            "L"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "07",
+            "L",
+            "Западно-Казахстанская область"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Жамбылская область",
+        "codes": [
+            "08",
+            "H"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "08",
+            "H",
+            "Жамбылская область"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Карагандинская область",
+        "codes": [
+            "09",
+            "M",
+            "K"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "09",
+            "M",
+            "K",
+            "Карагандинская область"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Костанайская область",
+        "codes": [
+            "10",
+            "P",
+            "W"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "10",
+            "P",
+            "W",
+            "Костанайская область"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Кызылординская область",
+        "codes": [
+            "11",
+            "N"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "11",
+            "N",
+            "Кызылординская область"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Мангистауская область",
+        "codes": [
+            "12",
+            "R"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "12",
+            "R",
+            "Мангистауская область"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Туркестанская область",
+        "codes": [
+            "13",
+            "X"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "13",
+            "X",
+            "Туркестанская область"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Павлодарская область",
+        "codes": [
+            "14",
+            "S"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "14",
+            "S",
+            "Павлодарская область"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Северо-Казахстанская область",
+        "codes": [
+            "15",
+            "T",
+            "O"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "15",
+            "T",
+            "O",
+            "Северо-Казахстанская область"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Восточно-Казахстанская область",
+        "codes": [
+            "16",
+            "F",
+            "U"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "16",
+            "F",
+            "U",
+            "Восточно-Казахстанская область"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "г. Шымкент",
+        "codes": [
+            "17",
+            "X"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "17",
+            "X",
+            "г. Шымкент"
+        ]
+    }
+]
