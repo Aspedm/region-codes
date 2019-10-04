@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell } from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
 
@@ -19,10 +19,10 @@ const FINES_DETAIL_PANEL = 'fines-detail-panel';
 const Fines = ({ id }) => {
 
     const [activePanel, setActivePanel] = useState(id);
+    const [panelHistory, setPanelHistory] = useState([id]);
     const [detailPanelData, setDetailPanelData] = useState({});
 
     useEffect(() => {
-        
         if (activePanel !== id) hideTabbar();
 
         return () => {
@@ -30,6 +30,39 @@ const Fines = ({ id }) => {
         };
     }, [activePanel]);
 
+    /**
+     * Method required for only support iOSSwipeBack
+     */
+    const goBack = () => {
+        const history = [...panelHistory];
+        history.pop();
+
+        const activePanel = history[history.length - 1];
+
+        if (activePanel === id) {
+            VkConnect.send('VKWebAppDisableSwipeBack');
+        }
+
+        setPanelHistory(history);
+        setActivePanel(activePanel);
+    }
+    
+    /**
+     * Method required for only support iOSSwipeBack
+     * @param {String} target
+     */
+    const updateHistory = target => {
+        const history = [...panelHistory];
+        history.push(target);
+
+        if (activePanel === id) {
+            VkConnect.send('VKWebAppEnableSwipeBack');
+        }
+
+        setPanelHistory(history);
+        setActivePanel(target);
+    }
+    
     /**
      * @returns {ReactDOM}
      */
@@ -54,43 +87,53 @@ const Fines = ({ id }) => {
         });
     };
 
+    /**
+     * @param {Object} item
+     */
     const openDetailPanel = item => {
         setDetailPanelData(item);
-        setActivePanel(FINES_DETAIL_PANEL)
+        updateHistory(FINES_DETAIL_PANEL);
     };
 
     const finesList = getFinesList();
 
     return (
-        <View id={id} activePanel={activePanel}>
-            <Panel id={id}>
-                <PanelHeader
-                    left={
-                        <HeaderButton onClick={openCheckFinesApp}>
-                            <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
-                        </HeaderButton>
-                    }
-                >
-                    КоАП РФ
-                </PanelHeader>
+        <ConfigProvider>
+            <View 
+                id={id} 
+                activePanel={activePanel}
+                onSwipeBack={goBack}
+                history={panelHistory}
+            >
+                <Panel id={id}>
+                    <PanelHeader
+                        left={
+                            <HeaderButton onClick={openCheckFinesApp}>
+                                <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
+                            </HeaderButton>
+                        }
+                    >
+                        КоАП РФ
+                    </PanelHeader>
 
-                <Group title="Тематика">
-                    <List>
-                        {finesList}
-                    </List>
-                </Group>
-            </Panel>
+                    <Group title="Тематика">
+                        <List>
+                            {finesList}
+                        </List>
+                    </Group>
+                </Panel>
 
-            <Panel id={FINES_DETAIL_PANEL}>
-                <PanelHeader
-                    left={<PanelHeaderBack onClick={() => setActivePanel(id)} />}
-                >
-                    {detailPanelData.name}
-                </PanelHeader>
+                <Panel id={FINES_DETAIL_PANEL}>
+                    <PanelHeader
+                        left={<PanelHeaderBack onClick={goBack} />}
+                    >
+                        {detailPanelData.name}
+                    </PanelHeader>
 
-                <FinesDetail item={detailPanelData} />
-            </Panel>
-        </View>
+                    <FinesDetail item={detailPanelData} />
+                </Panel>
+            </View>
+        </ConfigProvider>
     )
 };
 

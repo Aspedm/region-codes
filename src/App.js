@@ -45,7 +45,7 @@ const App = () => {
 					VKWebAppUpdateConfig(scheme);
 					break;
 				default:
-					console.log('vkConnectEvent', e.detail.type);
+					console.log(e.detail.type, e.detail.data);
 					break;
 			}
 		});
