@@ -1,0 +1,450 @@
+[
+    {
+        "id": 1,
+        "name": "Австрия",
+        "codes": [
+            "A"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "A",
+            "Австрия"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Бельгия",
+        "codes": [
+            "B"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "B",
+            "Бельгия"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Болгария",
+        "codes": [
+            "BG"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "BG",
+            "Болгария"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Великобритания",
+        "codes": [
+            "GB"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "GB",
+            "Великобритания"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Венгрия",
+        "codes": [
+            "H"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "H",
+            "Венгрия"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Германия",
+        "codes": [
+            "D"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "D",
+            "Германия"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Греция",
+        "codes": [
+            "GR"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "GR",
+            "Греция"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Дания",
+        "codes": [
+            "DK"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "DK",
+            "Дания"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Ирландия",
+        "codes": [
+            "IRL"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "IRL",
+            "Ирландия"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Испания",
+        "codes": [
+            "E"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "E",
+            "Испания"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Италия",
+        "codes": [
+            "I"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "I",
+            "Италия"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Кипр",
+        "codes": [
+            "CY"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "CY",
+            "Кипр"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Латвия",
+        "codes": [
+            "LV"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "LV",
+            "Латвия"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Литва",
+        "codes": [
+            "LT"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "LT",
+            "Литва"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Люксембург",
+        "codes": [
+            "L"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "L",
+            "Люксембург"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Мальта",
+        "codes": [
+            "MT"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "MT",
+            "Мальта"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Нидерланды",
+        "codes": [
+            "NL"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "NL",
+            "Нидерланды"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Польша",
+        "codes": [
+            "PL"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "PL",
+            "Польша"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Словакия",
+        "codes": [
+            "SK"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "SK",
+            "Словакия"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Словения",
+        "codes": [
+            "SLO"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "SLO",
+            "Словения"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Португалия",
+        "codes": [
+            "P"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "P",
+            "Португалия"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Румыния",
+        "codes": [
+            "RO"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "RO",
+            "Румыния"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Финляндия",
+        "codes": [
+            "FIN"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "FIN",
+            "Финляндия"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Франция",
+        "codes": [
+            "F"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "F",
+            "Франция"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Хорватия",
+        "codes": [
+            "HR"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "HR",
+            "Хорватия"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Чехия",
+        "codes": [
+            "CZ"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "CZ",
+            "Чехия"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Швеция",
+        "codes": [
+            "S"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "S",
+            "Швеция"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Эстония",
+        "codes": [
+            "EST"
+        ],
+        "meta": {
+            "carCount": null,
+            "postionByCarCount": null,
+            "phones": null
+        },
+        "tags": [
+            "EST",
+            "Эстония"
+        ]
+    }
+]
