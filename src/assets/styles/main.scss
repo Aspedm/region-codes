@@ -12,3 +12,10 @@
 a {
     color: var(--text_primary);
 }
+
+.sanctions {
+    display: inline-block;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
