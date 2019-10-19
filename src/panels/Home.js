@@ -22,6 +22,17 @@ const Home = ({ id }) => {
 	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
 	const [activeView, setActiveView] = useState(id);
 
+	/**
+     * Only Android device, support back button event
+     */
+    useEffect(() => {
+        window.addEventListener('popstate', () => setPopout(null), false);
+
+        return () => {
+            window.removeEventListener('popstate', () => setPopout(null), false);
+        };
+    });
+
 	useEffect(() => {
 		if (querySearch) return setQuerySearch('');
 	}, [activeView]);
@@ -32,7 +43,9 @@ const Home = ({ id }) => {
 	const showRegionInfo = region => {
 		setPopout(
 			<RegionInfoModal setPopout={setPopout} region={region} />
-		)
+		);
+
+		window.history.pushState({}, '', region);
 	};
 
 	/**

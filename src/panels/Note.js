@@ -41,8 +41,18 @@ const Note = ({ id, scheme }) => {
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
 
+    /**
+     * Only Android device, support back button event
+     */
     useEffect(() => {
-        
+        window.addEventListener('popstate', goBack, false);
+
+        return () => {
+            window.removeEventListener('popstate', goBack, false);
+        };
+    });
+
+    useEffect(() => {
         if (activePanel !== id) hideTabbar();
 
         return () => {
@@ -79,6 +89,7 @@ const Note = ({ id, scheme }) => {
             VkConnect.send('VKWebAppEnableSwipeBack');
         }
 
+        window.history.pushState({}, '', target);
         setPanelHistory(history);
         setActivePanel(target);
     }

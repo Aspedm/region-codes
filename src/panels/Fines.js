@@ -23,11 +23,14 @@ const Fines = ({ id, scheme }) => {
     const [panelHistory, setPanelHistory] = useState([id]);
     const [detailPanelData, setDetailPanelData] = useState({});
 
+    /**
+     * Only Android device, support back button event
+     */
     useEffect(() => {
-        window.addEventListener('popstate', goBack);
+        window.addEventListener('popstate', goBack, false);
 
         return () => {
-            window.removeEventListener('popstate', goBack);
+            window.removeEventListener('popstate', goBack, false);
         };
     });
 
@@ -68,6 +71,7 @@ const Fines = ({ id, scheme }) => {
             VkConnect.send('VKWebAppEnableSwipeBack');
         }
 
+        window.history.pushState({}, '', target);
         setPanelHistory(history);
         setActivePanel(target);
     }
