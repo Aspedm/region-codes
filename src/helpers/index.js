@@ -18,7 +18,7 @@ export const hideTabbar = () => {
     const tabbar = document.getElementsByClassName('Tabbar')[0];
     if (!tabbar) return '';
 
-    return tabbar.style.opacity = '0';
+    return tabbar.style.display = 'none';
 }
 
 /**
@@ -28,5 +28,5 @@ export const showTabbar = () => {
     const tabbar = document.getElementsByClassName('Tabbar')[0];
     if (!tabbar) return '';
 
-    return tabbar.style.opacity = '1';
+    return tabbar.style.display = 'flex';
 }

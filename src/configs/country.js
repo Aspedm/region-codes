@@ -33,7 +33,7 @@ export const COUNTRY_LIST = [
     },
     {
         key: 'eu',
-        name: 'Европа',
+        name: 'Страны Европы',
         data: eu,
     },
 ];

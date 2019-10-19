@@ -24,6 +24,14 @@ const Fines = ({ id, scheme }) => {
     const [detailPanelData, setDetailPanelData] = useState({});
 
     useEffect(() => {
+        window.addEventListener('popstate', goBack);
+
+        return () => {
+            window.removeEventListener('popstate', goBack);
+        };
+    });
+
+    useEffect(() => {
         if (activePanel !== id) hideTabbar();
 
         return () => {

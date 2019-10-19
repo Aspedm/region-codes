@@ -1052,28 +1052,28 @@
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.2.tgz#e13182e1b69871a422d7863e11a4a6f5b814a4bd"
   integrity sha512-42zEJkBpNfMEAvWR5WlwtTH22oDzcMjFsL9gDGExwF8X8WvAiw7Vwop7hPw03QT8TKfec83LwbHj6SvpqM4ELQ==
 
-"@vkontakte/icons@^1.8.3":
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-1.8.3.tgz#8ff3b38c8dade9f0f9b76dcf776d87b5a244d064"
-  integrity sha512-BCJgZozLt5yCRZfaaTZfIAG47LQrfFUP7j4Sz8xB6bXTgqPYmRTB5+UF8Lap0IkXDGiVEd5EZW1JwS3Ki/9IEA==
+"@vkontakte/icons@^1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-1.10.2.tgz#a2f751f6a3be9845f9f955d15e12083a4f821e41"
+  integrity sha512-eZhrJ9w+PZy/9Tnd/LwPZdi+CokDCl3bWgaF0+d8Z1vWLrfAiazOXJn6qHBwvsfGc7GfTT1E78nrW6Oar/v8WQ==
   dependencies:
     es6-object-assign "^1.1.0"
     svg-baker-runtime "^1.4.2"
 
-"@vkontakte/mvk-mini-apps-scroll-helper@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@vkontakte/mvk-mini-apps-scroll-helper/-/mvk-mini-apps-scroll-helper-1.0.3.tgz#5e0654b8d66dcc4e0a96ff223c6c9d63b08dd494"
-  integrity sha512-U7YSZ0/Q9/eSXHmEB8yw0cl+rtjQ5C6ux4LodD3TlBMTo/R3KJso2EAG8/hmj0KfvBSxwReSJ67TN3Hb7AvsLw==
+"@vkontakte/mvk-mini-apps-scroll-helper@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/mvk-mini-apps-scroll-helper/-/mvk-mini-apps-scroll-helper-1.1.1.tgz#6824137126fb77e049816faa8ac27406f6746657"
+  integrity sha512-RqeLisVfoohHlSuDI97aYIWLr3bjkgZ+i4OkHczHk7mg7HniLdt/5stwecPf3E+rtTchIrFONski2Jq851kmXA==
 
-"@vkontakte/vk-connect@^1.5.6":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vk-connect/-/vk-connect-1.5.6.tgz#c06c0572bb8ad48f128d8261530992836402fe06"
-  integrity sha512-CmCLTcMwmOgKpiHR/NYxuPh8mQU0+WNLzZMNgAC+h237zmYA/Qmn+zQLLIfeIJKhwY45dGYaj5hSkjU+oIicvA==
+"@vkontakte/vk-connect@^1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vk-connect/-/vk-connect-1.6.5.tgz#9de256d13cd5b69e4de9a134a406e09028e8ad90"
+  integrity sha512-gWnaLh6DAM0crnoZEGentensWd7ZJ9gmuucGFyC6xr3RIbDK7irh3mUrcHViWuTRVHAtqhRg29FvtKITsWCexw==
 
-"@vkontakte/vkui@^2.30.7":
-  version "2.30.7"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-2.30.7.tgz#0a1a2a5acf370744a5ae3fec0d98e5891771c4af"
-  integrity sha512-ApKXNNrMgDeszgProcvMKmzaj/Iuae5CJ9t2idjL2rp5QXT6wN8sVIHdOgdv5uuvFYw2Ci229WTz5Cg3BJ1TwQ==
+"@vkontakte/vkui@^2.32.2":
+  version "2.32.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-2.32.2.tgz#33b174bfb264140d69531e83280a2069a338ed3d"
+  integrity sha512-HQyZTfUFeBcml2KNnc7Kb00yjcvSNdmA8tG3mFJ22Wiypky892e8wGG+9i2pf6sYwJE7gQcpxAon/YsFioVEpg==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
