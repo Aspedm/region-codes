@@ -1,4 +1,4 @@
-:root {
+:root, body[scheme="bright_light"] {
     // Main
     --background_page: #f5f6fa;
     --text_primary: #233756;
@@ -6,6 +6,7 @@
 
     // Header
     --header_background: #8b44f7;
+    --header_text: #ffffff;
 
     // Tabbar
     --tabbar_active_icon: #4454ff;
