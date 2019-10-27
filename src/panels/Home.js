@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Root, View, Panel, PanelHeader, Search, List, Cell, Group } from '@vkontakte/vkui';
+import { Root, View, Panel, PanelHeader } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
 // Components
 import RegionInfoModal from '../components/regionInfoModal';
+import LicensePlatesList from '../components/licensePlatesList';
 import SelectCountryFromList from '../components/countryList';
-import EmptyCountryList from '../components/emptyCountryList';
 import SelectCountry from '../components/selectCountry';
-import SearchAlert from '../components/searchAlert';
+import SearchBar from '../components/searchBar';
 
 // Configs
 import { DEFAULT_COUNTRY, COUNTRY_LIST } from '../configs/country';
-import { MAX_SEARCH_LENGTH } from '../configs';
 
 const COUNTRY_VIEW = 'country-view';
 
@@ -48,31 +47,10 @@ const Home = ({ id }) => {
 		window.history.pushState({}, '', region);
 	};
 
-	/**
-	 * @param {String} query
-	 * @returns {*}
-	 */
-	const validateSearchQuery = query => {
-		if (!query.length) return true;
-		if (!query.replace(/\s/g, '').length) return false;
-		if (query.length > MAX_SEARCH_LENGTH) return setPopout(
-			<SearchAlert setPopout={setPopout} />
-		);
-
-		return true;
-	};
-
-	/**
-	 * @param {String} query 
-	 */
-	const searchOnChange = query => {
-		if (validateSearchQuery(query)) return setQuerySearch(query);
-
-		return false;
-	};
 
 	/**
 	 * @param {String} country
+	 * @returns {Array}
 	 */
 	const getRegionList = () => {
 		const search = querySearch.toLowerCase();
@@ -83,21 +61,10 @@ const Home = ({ id }) => {
 			return tags.indexOf(search) > -1;
 		}) : [];
 
-		return result.map(item =>
-			<Cell 
-				multiline
-				expandable
-				key={item.name}
-				description={`Код региона: ${item.codes.join(', ')}`}
-				onClick={() => showRegionInfo(item)}
-			>
-				{item.name}
-			</Cell>
-		)
+		return result;
 	};
 
 	const regionList = getRegionList();
-	const listIsEmpty = regionList.length === 0;
 
 	return (
 		<Root activeView={activeView}>
@@ -105,10 +72,10 @@ const Home = ({ id }) => {
 				<Panel id={id}>
 					<PanelHeader noShadow>Коды регионов</PanelHeader>
 
-					<Search
-						value={querySearch}
-						onChange={searchOnChange}
-						placeholder="Введите номер региона"
+					<SearchBar 
+						querySearch={querySearch}
+						setQuerySearch={setQuerySearch}
+						setPopout={setPopout}
 					/>
 
 					<SelectCountry 
@@ -117,15 +84,10 @@ const Home = ({ id }) => {
 						selectedCountry={countryCode}
 					/>
 
-					{!listIsEmpty &&
-						<Group>
-							<List>
-								{regionList}
-							</List>
-						</Group>
-					}
-
-					{listIsEmpty && <EmptyCountryList /> }
+					<LicensePlatesList 
+						list={regionList}
+						showRegionInfo={showRegionInfo}
+					/>
 				</Panel>
 			</View>
 
