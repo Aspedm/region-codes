@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Root, View, Panel, PanelHeader } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
+import NoConnectionModal from 'vkui-no-connection-modal';
+import useConnection from 'vkui-no-connection-modal/lib/useConnection';
 
 // Components
 import RegionInfoModal from '../components/regionInfoModal';
@@ -20,6 +22,20 @@ const Home = ({ id }) => {
 	const [popout, setPopout] = useState(null);
 	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
 	const [activeView, setActiveView] = useState(id);
+	const isOnline = useConnection();
+ 
+    useEffect(() => {
+        if (!isOnline) return setPopout(
+            <NoConnectionModal
+				title="Нет сети"
+				caption="Похоже, что у Вас проблемы с интернет соединением."
+				actionText="Проверить соединение"
+                onClose={() => setPopout(null)}
+            />
+        );
+ 
+        return setPopout(null);
+    }, [isOnline]);
 
 	/**
      * Only Android device, support back button event

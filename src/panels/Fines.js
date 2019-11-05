@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
+import NoConnectionModal from 'vkui-no-connection-modal';
+import useConnection from 'vkui-no-connection-modal/lib/useConnection';
 
 // Components
 import FinesDetail from '../components/finesDetail';
@@ -18,10 +20,25 @@ const FINES_APP_ICON = 'https://sun9-7.userapi.com/c848520/v848520804/1d16eb/YrT
 const FINES_DETAIL_PANEL = 'fines-detail-panel';
 
 const Fines = ({ id, scheme }) => {
-
+    const [popout, setPopout] = useState(null);
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
     const [detailPanelData, setDetailPanelData] = useState({});
+    const isOnline = useConnection();
+
+    useEffect(() => {
+        if (!isOnline) return setPopout(
+            <NoConnectionModal
+                title="Нет сети"
+                caption="Похоже, что у Вас проблемы с интернет соединением."
+                actionText="Проверить соединение"
+                onClose={() => setPopout(null)}
+            />
+        );
+ 
+        return setPopout(null);
+    }, [isOnline]);
+    
 
     /**
      * Only Android device, support back button event
@@ -117,6 +134,7 @@ const Fines = ({ id, scheme }) => {
                 activePanel={activePanel}
                 onSwipeBack={goBack}
                 history={panelHistory}
+                popout={popout}
             >
                 <Panel id={id}>
                     <PanelHeader

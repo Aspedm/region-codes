@@ -1060,6 +1060,14 @@
     es6-object-assign "^1.1.0"
     svg-baker-runtime "^1.4.2"
 
+"@vkontakte/icons@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-1.11.0.tgz#90f1b5362d193d8c36a69cf8c682f032568ef0f2"
+  integrity sha512-3bg+Bi5kTyzzs92ecgv/PYDvdurCaIzFiDqd8JzsoGmkBDosncJPF7m6458zv9LtPg56yzmmqTFF9gJz8xMLbQ==
+  dependencies:
+    es6-object-assign "^1.1.0"
+    svg-baker-runtime "^1.4.2"
+
 "@vkontakte/mvk-mini-apps-scroll-helper@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@vkontakte/mvk-mini-apps-scroll-helper/-/mvk-mini-apps-scroll-helper-1.1.1.tgz#6824137126fb77e049816faa8ac27406f6746657"
@@ -1070,10 +1078,20 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-connect/-/vk-connect-1.6.5.tgz#9de256d13cd5b69e4de9a134a406e09028e8ad90"
   integrity sha512-gWnaLh6DAM0crnoZEGentensWd7ZJ9gmuucGFyC6xr3RIbDK7irh3mUrcHViWuTRVHAtqhRg29FvtKITsWCexw==
 
+"@vkontakte/vk-connect@^1.6.8":
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vk-connect/-/vk-connect-1.6.8.tgz#e8d38dc7582c3529b88b3295d34efae7dd87f8fc"
+  integrity sha512-Ju10WB8b5I7jN9SyyyNK5P8avAqiFWiGKlSGsMuvDBzyzdcq8NHWCoU8F6Oiz3f7bPRCm0aOqPifjmqYtwG4bg==
+
 "@vkontakte/vkui@^2.32.2":
   version "2.32.2"
   resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-2.32.2.tgz#33b174bfb264140d69531e83280a2069a338ed3d"
   integrity sha512-HQyZTfUFeBcml2KNnc7Kb00yjcvSNdmA8tG3mFJ22Wiypky892e8wGG+9i2pf6sYwJE7gQcpxAon/YsFioVEpg==
+
+"@vkontakte/vkui@^2.32.4":
+  version "2.32.4"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-2.32.4.tgz#336b0d3f7cb42f6cb85615e6c6a47c1ac2cd31a6"
+  integrity sha512-ygKmtj295JbCgGfQE10XJ3UKjmdea5vHIkxP18jBkSSG6JLO/gaW0O/A52NPc6XqXQXWjtCLat5UnyTLEtbOrg==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
@@ -10591,6 +10609,16 @@ vfile@^2.0.0:
     replace-ext "1.0.0"
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
+
+vkui-no-connection-modal@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vkui-no-connection-modal/-/vkui-no-connection-modal-0.0.1.tgz#37dc0fa67f968254f9a1dbf48d5182a3489bd17c"
+  integrity sha512-tObGU+vkOnE20E7YA9t7E5FtNsbJSDHxl5wWT2Z8zV9q3y1R0SF5yBdXQoHLD8Nl0I2FyJQerjSMFX6IR3szOg==
+  dependencies:
+    "@vkontakte/icons" "^1.11.0"
+    "@vkontakte/vk-connect" "^1.6.8"
+    "@vkontakte/vkui" "^2.32.4"
+    prop-types "^15.7.2"
 
 vm-browserify@^1.0.1:
   version "1.1.0"
