@@ -8,7 +8,7 @@ import SearchAlert from '../searchAlert';
 // Configs
 import { MAX_SEARCH_LENGTH } from '../../configs';
 
-const SearchBar = ({ setQuerySearch, querySearch, setPopout }) => {
+const SearchBar = ({ setQuerySearch, querySearch, setModal }) => {
 
     /**
 	 * @param {String} query
@@ -17,8 +17,8 @@ const SearchBar = ({ setQuerySearch, querySearch, setPopout }) => {
 	const validateSearchQuery = query => {
 		if (!query.length) return true;
 		if (!query.replace(/\s/g, '').length) return false;
-		if (query.length > MAX_SEARCH_LENGTH) return setPopout(
-			<SearchAlert setPopout={setPopout} />
+		if (query.length > MAX_SEARCH_LENGTH) return setModal(
+			<SearchAlert setModal={setModal} />
 		);
 
 		return true;
@@ -46,7 +46,7 @@ const SearchBar = ({ setQuerySearch, querySearch, setPopout }) => {
 SearchBar.propTypes = {
     querySearch: PropTypes.string,
     setQuerySearch: PropTypes.func.isRequired,
-    setPopout: PropTypes.func.isRequired,
+    setModal: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

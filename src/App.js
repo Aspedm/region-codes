@@ -3,6 +3,9 @@ import { Epic } from '@vkontakte/vkui';
 import vkConnect from '@vkontakte/vk-connect';
 import get from 'lodash/get';
 import '@vkontakte/vkui/dist/vkui.css';
+import NoConnectionModal from 'vkui-no-connection-modal';
+import useConnection from 'vkui-no-connection-modal/lib/useConnection';
+
 import './assets/fonts/fonts.css';
 import './assets/styles/main.scss';
 
@@ -23,7 +26,22 @@ const DEFAULT_STORY = 'home';
 const App = () => {
 	const [story, setStory] = useState(DEFAULT_STORY);
 	const [colorScheme, setColorScheme] = useState(DEFAULT_COLOR_SCHEME);
+	const [modal, setModal] = useState(null);
+	const isOnline = useConnection();
 
+	useEffect(() => {
+        if (!isOnline) return setModal(
+            <NoConnectionModal 
+                title="Нет сети"
+                caption="Похоже, что у Вас проблемы с интернет соединением."
+                actionText="Проверить соединение"
+                onClose={() => setModal(null)}
+            />
+        );
+ 
+        return setModal(null);
+	}, [isOnline]);
+	
 	/**
 	 * @param {String} scheme
 	 * @returns {undefined}
@@ -77,10 +95,28 @@ const App = () => {
 			activeStory={story} 
 			tabbar={
 				<Tabbar go={updateStory} selected={story} />
-			}>
-			<Note id="note" scheme={colorScheme} />
-			<Home id="home" scheme={colorScheme} />
-			<Fines id="fines" scheme={colorScheme} />
+			}
+		>
+			<Note 
+				id="note" 
+				scheme={colorScheme} 
+				modal={modal} 
+				setModal={setModal}
+			/>
+
+			<Home 
+				id="home" 
+				scheme={colorScheme} 
+				modal={modal} 
+				setModal={setModal} 
+			/>
+
+			<Fines 
+				id="fines" 
+				scheme={colorScheme} 
+				modal={modal} 
+				setModal={setModal} 
+			/>
 		</Epic>
 	);
 }

@@ -14,7 +14,7 @@ const INFO_MODAL_ID = 'info-modal';
 const INFO_TAB = 'info';
 const TRAFFIC_POLICE = 'traffic-police';
 
-const RegionInfoModal = ({ setPopout, region }) => {
+const RegionInfoModal = ({ setModal, region }) => {
     const [activeTab, setActiveTab] = useState(INFO_TAB);
 
     /**
@@ -33,12 +33,12 @@ const RegionInfoModal = ({ setPopout, region }) => {
         <ModalRoot activeModal={INFO_MODAL_ID}>
             <ModalPage
                 id={INFO_MODAL_ID}
-                onClose={() => setPopout(null)}
+                onClose={() => setModal(null)}
                 dynamicContentHeight={true}
                 header={
                     <ModalPageHeader
-                        left={IS_PLATFORM_ANDROID && <HeaderButton onClick={() => setPopout(null)}><Icon24Cancel /></HeaderButton>}
-                        right={IS_PLATFORM_IOS && <HeaderButton onClick={() => setPopout(null)}><Icon24Dismiss /></HeaderButton>}
+                        left={IS_PLATFORM_ANDROID && <HeaderButton onClick={() => setModal(null)}><Icon24Cancel /></HeaderButton>}
+                        right={IS_PLATFORM_IOS && <HeaderButton onClick={() => setModal(null)}><Icon24Dismiss /></HeaderButton>}
                     >
                         {region.name}
                     </ModalPageHeader>
@@ -104,7 +104,7 @@ const RegionInfoModal = ({ setPopout, region }) => {
 };
 
 RegionInfoModal.propTypes = {
-    setPopout: PropTypes.func.isRequired,
+    setModal: PropTypes.func.isRequired,
     region: PropTypes.object.isRequired,
 }
 

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Root, View, Panel, PanelHeader } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
-import NoConnectionModal from 'vkui-no-connection-modal';
-import useConnection from 'vkui-no-connection-modal/lib/useConnection';
 
 // Components
 import RegionInfoModal from '../components/regionInfoModal';
@@ -17,34 +15,19 @@ import { DEFAULT_COUNTRY, COUNTRY_LIST } from '../configs/country';
 
 const COUNTRY_VIEW = 'country-view';
 
-const Home = ({ id }) => {
+const Home = ({ id, modal, setModal }) => {
 	const [querySearch, setQuerySearch] = useState('');
-	const [popout, setPopout] = useState(null);
 	const [countryCode, setCountryCode] = useState(DEFAULT_COUNTRY);
 	const [activeView, setActiveView] = useState(id);
-	const isOnline = useConnection();
- 
-    useEffect(() => {
-        if (!isOnline) return setPopout(
-            <NoConnectionModal
-				title="Нет сети"
-				caption="Похоже, что у Вас проблемы с интернет соединением."
-				actionText="Проверить соединение"
-                onClose={() => setPopout(null)}
-            />
-        );
- 
-        return setPopout(null);
-    }, [isOnline]);
 
 	/**
      * Only Android device, support back button event
      */
     useEffect(() => {
-        window.addEventListener('popstate', () => setPopout(null), false);
+        window.addEventListener('popstate', () => setModal(null), false);
 
         return () => {
-            window.removeEventListener('popstate', () => setPopout(null), false);
+            window.removeEventListener('popstate', () => setModal(null), false);
         };
     });
 
@@ -56,8 +39,8 @@ const Home = ({ id }) => {
 	 * @param {Object} region
 	 */
 	const showRegionInfo = region => {
-		setPopout(
-			<RegionInfoModal setPopout={setPopout} region={region} />
+		setModal(
+			<RegionInfoModal setModal={setModal} region={region} />
 		);
 
 		window.history.pushState({}, '', region);
@@ -84,14 +67,18 @@ const Home = ({ id }) => {
 
 	return (
 		<Root activeView={activeView}>
-			<View id={id} activePanel={id} popout={popout}>
+			<View 
+				id={id} 
+				activePanel={id} 
+				modal={modal}
+			>
 				<Panel id={id}>
 					<PanelHeader noShadow>Коды регионов</PanelHeader>
 
 					<SearchBar 
 						querySearch={querySearch}
 						setQuerySearch={setQuerySearch}
-						setPopout={setPopout}
+						setModal={setModal}
 					/>
 
 					<SelectCountry 
@@ -107,7 +94,10 @@ const Home = ({ id }) => {
 				</Panel>
 			</View>
 
-			<View id={COUNTRY_VIEW} activePanel={COUNTRY_VIEW}>
+			<View 
+				id={COUNTRY_VIEW} 
+				activePanel={COUNTRY_VIEW}
+			>
 				<Panel id={COUNTRY_VIEW}>
 					<PanelHeader 
 						noShadow
@@ -130,7 +120,9 @@ const Home = ({ id }) => {
 
 Home.propTypes = {
     id: PropTypes.string.isRequired,
-    scheme: PropTypes.string.isRequired,
+	scheme: PropTypes.string.isRequired,
+	modal: PropTypes.any,
+    setModal: PropTypes.func,
 };
 
 export default Home;
