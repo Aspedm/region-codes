@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "0ec7f2e83ea15eaffff2cfe8a905819e",
-    "url": "/region-codes/static/media/license-plate-police.0ec7f2e8.png"
+    "revision": "5ddbdee7d65cf78b67e5",
+    "url": "/region-codes/static/css/main.9774c708.chunk.css"
   },
   {
-    "revision": "31d1538faee3bfee6ae9",
-    "url": "/region-codes/static/css/main.e1ab0c55.chunk.css"
+    "revision": "5ddbdee7d65cf78b67e5",
+    "url": "/region-codes/static/js/main.d228f75e.chunk.js"
   },
   {
     "revision": "4ece08f67d646629938b",
     "url": "/region-codes/static/js/runtime~main.ed2b1104.js"
   },
   {
-    "revision": "488f872a8712056a511e9cc0039fdf8a",
-    "url": "/region-codes/static/media/roadnumbers.488f872a.woff"
+    "revision": "54c9dee9a761389b0fda",
+    "url": "/region-codes/static/css/2.58ffe350.chunk.css"
   },
   {
-    "revision": "dcf9d8f6bdcf0d61e255",
-    "url": "/region-codes/static/js/2.eb1e96ee.chunk.js"
+    "revision": "54c9dee9a761389b0fda",
+    "url": "/region-codes/static/js/2.6e889ace.chunk.js"
   },
   {
     "revision": "b9f128467ea2ae312bd768f420c2bdcf",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/region-codes/static/media/license-plate-diplomatic.fb5b44c1.png"
   },
   {
-    "revision": "31d1538faee3bfee6ae9",
-    "url": "/region-codes/static/js/main.51528c8d.chunk.js"
+    "revision": "0ec7f2e83ea15eaffff2cfe8a905819e",
+    "url": "/region-codes/static/media/license-plate-police.0ec7f2e8.png"
   },
   {
     "revision": "8cfbc2aa7cabaf225790292efe6758d4",
@@ -68,11 +68,11 @@ self.__precacheManifest = [
     "url": "/region-codes/static/media/roadnumbers.84d8e48f.woff2"
   },
   {
-    "revision": "dcf9d8f6bdcf0d61e255",
-    "url": "/region-codes/static/css/2.58ffe350.chunk.css"
+    "revision": "488f872a8712056a511e9cc0039fdf8a",
+    "url": "/region-codes/static/media/roadnumbers.488f872a.woff"
   },
   {
-    "revision": "b7268aa0c45073c01702ed170b6d867a",
+    "revision": "139025e72a052c93d3975ed306c7c987",
     "url": "/region-codes/index.html"
   }
 ];
