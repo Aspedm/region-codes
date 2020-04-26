@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { InfoRow, List, Cell } from '@vkontakte/vkui';
+import Icon28PhoneOutline from '@vkontakte/icons/dist/28/phone_outline';
 import get from 'lodash/get';
 
 
@@ -21,6 +22,7 @@ const PhonesList = ({ region }) => {
                 key={index}
                 expandable={true}
                 href={`tel:${item}`}
+                before={<Icon28PhoneOutline />}
             >
                 <InfoRow title={index === 0 ? 'Телефон' : ''}>
                     {item}

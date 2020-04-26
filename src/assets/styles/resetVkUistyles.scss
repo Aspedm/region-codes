@@ -1,33 +1,19 @@
 // Tabs
-.Tabs {
-    //
-    &--ios {
-        background: none!important;
-        .TabsItem {
-            //
-            &--selected {
-                //
-                .TabsItem__in {
-                    color: #ffffff;
-                }
-            }
-        }
-    }
-    .TabsItem__in {
-        user-select: none;
-    }
-}
 .Tabbar {
     transition: all 0.3s;
 }
 // /Tabs
 
-// 
+// Header
 .Header {
     user-select: none;
 }
 
-.PanelHeader-left-in {
+.PanelHeader__left {
     color: #ffffff;
 }
-//
+
+.PanelHeader__content {
+    color: #ffffff;
+}
+// /Header

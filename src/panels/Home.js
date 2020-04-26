@@ -73,7 +73,7 @@ const Home = ({ id, modal, setModal }) => {
 				modal={modal}
 			>
 				<Panel id={id}>
-					<PanelHeader noShadow>Коды регионов</PanelHeader>
+					<PanelHeader>Коды регионов</PanelHeader>
 
 					<SearchBar 
 						querySearch={querySearch}
@@ -99,8 +99,7 @@ const Home = ({ id, modal, setModal }) => {
 				activePanel={COUNTRY_VIEW}
 			>
 				<Panel id={COUNTRY_VIEW}>
-					<PanelHeader 
-						noShadow
+					<PanelHeader
 						left={<PanelHeaderBack onClick={() => setActiveView(id)} />}
 					>
 						Выбор страны

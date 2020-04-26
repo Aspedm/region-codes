@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
-import { ModalRoot, ModalPage, ModalPageHeader, Group, List, Cell, Counter, HeaderButton, Tabs, TabsItem, Div, InfoRow } from '@vkontakte/vkui';
+import { ModalRoot, ModalPage, ModalPageHeader, Group, List, Cell, Counter, PanelHeaderButton, Tabs, TabsItem, Div, InfoRow } from '@vkontakte/vkui';
 import { IS_PLATFORM_ANDROID, IS_PLATFORM_IOS } from '@vkontakte/vkui/dist/lib/platform';
 import Icon24Dismiss from '@vkontakte/icons/dist/24/dismiss';
 import Icon24Cancel from '@vkontakte/icons/dist/24/cancel';
@@ -37,8 +37,8 @@ const RegionInfoModal = ({ setModal, region }) => {
                 dynamicContentHeight={true}
                 header={
                     <ModalPageHeader
-                        left={IS_PLATFORM_ANDROID && <HeaderButton onClick={() => setModal(null)}><Icon24Cancel /></HeaderButton>}
-                        right={IS_PLATFORM_IOS && <HeaderButton onClick={() => setModal(null)}><Icon24Dismiss /></HeaderButton>}
+                        left={IS_PLATFORM_ANDROID && <PanelHeaderButton onClick={() => setModal(null)}><Icon24Cancel /></PanelHeaderButton>}
+                        right={IS_PLATFORM_IOS && <PanelHeaderButton onClick={() => setModal(null)}><Icon24Dismiss /></PanelHeaderButton>}
                     >
                         {region.name}
                     </ModalPageHeader>
@@ -69,13 +69,13 @@ const RegionInfoModal = ({ setModal, region }) => {
                         <List>
                             <Cell 
                                 description="На 1000 человек."
-                                indicator={<Counter type="primary">{region.meta.carCount}</Counter>}
+                                indicator={<Counter mode="primary">{region.meta.carCount}</Counter>}
                             >
                                 Кол-во машин
                             </Cell>
                             <Cell 
                                 description="По кол-ву машин."
-                                indicator={<Counter type="primary">{region.meta.postionByCarCount}</Counter>}
+                                indicator={<Counter mode="primary">{region.meta.postionByCarCount}</Counter>}
                             >
                                 Занимаемое место
                             </Cell>

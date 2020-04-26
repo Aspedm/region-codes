@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
 import { List, Cell, InfoRow } from '@vkontakte/vkui';
+import Icon28Place from '@vkontakte/icons/dist/28/place';
 
 const DutyTrafficPoliceAdress = ({ region }) => {
 
@@ -32,6 +33,7 @@ const DutyTrafficPoliceAdress = ({ region }) => {
                     href={`https://www.google.ru/maps/search/${region.meta.adress}/`}
                     target="_blank"
                     rel="nofollow noopener"
+                    before={<Icon28Place />}
                 >
                     <InfoRow title="Адрес">
                         {region.meta.adress}

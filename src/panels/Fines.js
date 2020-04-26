@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { View, Panel, PanelHeader, HeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, PanelHeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import VkConnect from '@vkontakte/vk-connect';
 
@@ -122,9 +122,9 @@ const Fines = ({ id, scheme, modal }) => {
                 <Panel id={id}>
                     <PanelHeader
                         left={
-                            <HeaderButton onClick={openCheckFinesApp}>
+                            <PanelHeaderButton onClick={openCheckFinesApp}>
                                 <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
-                            </HeaderButton>
+                            </PanelHeaderButton>
                         }
                     >
                         КоАП РФ
