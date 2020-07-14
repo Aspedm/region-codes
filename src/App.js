@@ -74,7 +74,7 @@ const App = () => {
 		return () => {
 			vkBridge.unsubscribe(vkEvents);
 		};
-	}, [VKWebAppUpdateConfig]);
+	}, []);
 
 	/**
 	 * @param {Object} event 
