@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "adb3d6fd3f075777d5a6",
+    "revision": "9a5bce72dce4744fa324",
     "url": "/region-codes/static/css/main.79faaa09.chunk.css"
   },
   {
-    "revision": "adb3d6fd3f075777d5a6",
-    "url": "/region-codes/static/js/main.5929470d.chunk.js"
+    "revision": "9a5bce72dce4744fa324",
+    "url": "/region-codes/static/js/main.fe844895.chunk.js"
   },
   {
     "revision": "4ece08f67d646629938b",
@@ -64,15 +64,15 @@ self.__precacheManifest = [
     "url": "/region-codes/static/media/license-plate-sport.f7039ed2.png"
   },
   {
-    "revision": "488f872a8712056a511e9cc0039fdf8a",
-    "url": "/region-codes/static/media/roadnumbers.488f872a.woff"
-  },
-  {
     "revision": "84d8e48f3b9e9a8f8223c4ada57dda44",
     "url": "/region-codes/static/media/roadnumbers.84d8e48f.woff2"
   },
   {
-    "revision": "1183958876da89d6519d13e6276326e4",
+    "revision": "488f872a8712056a511e9cc0039fdf8a",
+    "url": "/region-codes/static/media/roadnumbers.488f872a.woff"
+  },
+  {
+    "revision": "a9e7d054f48387383ab197fa97023971",
     "url": "/region-codes/index.html"
   }
 ];
