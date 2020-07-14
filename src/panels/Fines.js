@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { View, Panel, PanelHeader, PanelHeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, PanelHeaderButton, Group, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import vkBridge from '@vkontakte/vk-bridge';
 
@@ -17,7 +17,7 @@ const FINES_APP_ID = 6253254;
 const FINES_APP_ICON = 'https://sun9-7.userapi.com/c848520/v848520804/1d16eb/YrT2oK8WQMI.jpg';
 const FINES_DETAIL_PANEL = 'fines-detail-panel';
 
-const Fines = ({ id, scheme, modal }) => {
+const Fines = ({ id, modal }) => {
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
     const [detailPanelData, setDetailPanelData] = useState({});
@@ -111,49 +111,46 @@ const Fines = ({ id, scheme, modal }) => {
     const finesList = getFinesList();
 
     return (
-        <ConfigProvider scheme={scheme}>
-            <View 
-                id={id} 
-                activePanel={activePanel}
-                onSwipeBack={goBack}
-                history={panelHistory}
-                modal={modal}
-            >
-                <Panel id={id}>
-                    <PanelHeader
-                        left={
-                            <PanelHeaderButton onClick={openCheckFinesApp}>
-                                <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
-                            </PanelHeaderButton>
-                        }
-                    >
-                        КоАП РФ
-                    </PanelHeader>
+        <View 
+            id={id} 
+            activePanel={activePanel}
+            onSwipeBack={goBack}
+            history={panelHistory}
+            modal={modal}
+        >
+            <Panel id={id}>
+                <PanelHeader
+                    left={
+                        <PanelHeaderButton onClick={openCheckFinesApp}>
+                            <img src={FINES_APP_ICON} className="Icon openFinesAppIcon" alt="fines app" />
+                        </PanelHeaderButton>
+                    }
+                >
+                    КоАП РФ
+                </PanelHeader>
 
-                    <Group title="Тематика">
-                        <List>
-                            {finesList}
-                        </List>
-                    </Group>
-                </Panel>
+                <Group title="Тематика">
+                    <List>
+                        {finesList}
+                    </List>
+                </Group>
+            </Panel>
 
-                <Panel id={FINES_DETAIL_PANEL}>
-                    <PanelHeader
-                        left={<PanelHeaderBack onClick={goBack} />}
-                    >
-                        {detailPanelData.name}
-                    </PanelHeader>
+            <Panel id={FINES_DETAIL_PANEL}>
+                <PanelHeader
+                    left={<PanelHeaderBack onClick={goBack} />}
+                >
+                    {detailPanelData.name}
+                </PanelHeader>
 
-                    <FinesDetail item={detailPanelData} />
-                </Panel>
-            </View>
-        </ConfigProvider>
+                <FinesDetail item={detailPanelData} />
+            </Panel>
+        </View>
     )
 };
 
 Fines.propTypes = {
     id: PropTypes.string.isRequired,
-    scheme: PropTypes.string.isRequired,
     modal: PropTypes.any,
     setModal: PropTypes.func,
 };

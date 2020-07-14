@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Epic } from '@vkontakte/vkui';
+import { Epic, ConfigProvider } from '@vkontakte/vkui';
 import vkBridge from '@vkontakte/vk-bridge';
 import get from 'lodash/get';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -93,33 +93,32 @@ const App = () => {
 	};
 
 	return (
-		<Epic 
-			activeStory={story} 
-			tabbar={
-				<Tabbar go={updateStory} selected={story} />
-			}
-		>
-			<Note 
-				id="note" 
-				scheme={colorScheme} 
-				modal={modal} 
-				setModal={setModal}
-			/>
+		<ConfigProvider scheme={colorScheme}>
+			<Epic 
+				activeStory={story} 
+				tabbar={
+					<Tabbar go={updateStory} selected={story} />
+				}
+			>
+				<Note 
+					id="note" 
+					modal={modal} 
+					setModal={setModal}
+				/>
 
-			<Home 
-				id="home" 
-				scheme={colorScheme} 
-				modal={modal} 
-				setModal={setModal} 
-			/>
+				<Home 
+					id="home" 
+					modal={modal} 
+					setModal={setModal} 
+				/>
 
-			<Fines 
-				id="fines" 
-				scheme={colorScheme} 
-				modal={modal} 
-				setModal={setModal} 
-			/>
-		</Epic>
+				<Fines 
+					id="fines" 
+					modal={modal} 
+					setModal={setModal} 
+				/>
+			</Epic>
+		</ConfigProvider>
 	);
 }
 

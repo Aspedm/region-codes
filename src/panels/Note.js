@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { View, Panel, PanelHeader, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, Group, List, Cell } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 import vkBridge from '@vkontakte/vk-bridge';
 
@@ -37,7 +37,7 @@ const NOTE_LIST = [
     }
 ]
 
-const Note = ({ id, scheme, modal }) => {
+const Note = ({ id, modal }) => {
     const [activePanel, setActivePanel] = useState(id);
     const [panelHistory, setPanelHistory] = useState([id]);
 
@@ -110,54 +110,51 @@ const Note = ({ id, scheme, modal }) => {
     const noteList = getNoteList();
 
     return (
-        <ConfigProvider scheme={scheme}>
-            <View 
-                id={id} 
-                activePanel={activePanel}
-                onSwipeBack={goBack}
-                history={panelHistory}
-                modal={modal}
-            >
-                <Panel id={id}>
-                    <PanelHeader>Заметки</PanelHeader>
+        <View 
+            id={id} 
+            activePanel={activePanel}
+            onSwipeBack={goBack}
+            history={panelHistory}
+            modal={modal}
+        >
+            <Panel id={id}>
+                <PanelHeader>Заметки</PanelHeader>
 
-                    <Group title="Заметки об автомобильных номерах" description="Описаны автомобильные номера РФ">
-                        <List>
-                            {noteList}
-                        </List>
-                    </Group>
-                </Panel>
+                <Group title="Заметки об автомобильных номерах" description="Описаны автомобильные номера РФ">
+                    <List>
+                        {noteList}
+                    </List>
+                </Group>
+            </Panel>
 
-                <Panel id={COLORFUL_PANEL}>
-                    <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
-                        Цветные номера
-                    </PanelHeader>
-                    
-                    <ColorfulPanelContent />
-                </Panel>
+            <Panel id={COLORFUL_PANEL}>
+                <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
+                    Цветные номера
+                </PanelHeader>
+                
+                <ColorfulPanelContent />
+            </Panel>
 
-                <Panel id={FORM_PANEL}>
-                    <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
-                        Номера разных форм
-                    </PanelHeader>
-                    
-                    <DiferentFormPanelContent />
-                </Panel>
+            <Panel id={FORM_PANEL}>
+                <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
+                    Номера разных форм
+                </PanelHeader>
+                
+                <DiferentFormPanelContent />
+            </Panel>
 
-                <Panel id={WITHOUT_FLAG_PANEL}>
-                    <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
-                        Номера без флага РФ
-                    </PanelHeader>
-                    <WithoutFlagPanelConent />
-                </Panel>
-            </View>
-        </ConfigProvider>
+            <Panel id={WITHOUT_FLAG_PANEL}>
+                <PanelHeader left={<PanelHeaderBack onClick={goBack} />}>
+                    Номера без флага РФ
+                </PanelHeader>
+                <WithoutFlagPanelConent />
+            </Panel>
+        </View>
     )
 };
 
 Note.propTypes = {
     id: PropTypes.string.isRequired,
-    scheme: PropTypes.string.isRequired,
     modal: PropTypes.any,
     setModal: PropTypes.func,
 };

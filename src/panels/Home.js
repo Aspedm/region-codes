@@ -119,7 +119,6 @@ const Home = ({ id, modal, setModal }) => {
 
 Home.propTypes = {
     id: PropTypes.string.isRequired,
-	scheme: PropTypes.string.isRequired,
 	modal: PropTypes.any,
     setModal: PropTypes.func,
 };
