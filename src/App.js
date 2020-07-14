@@ -44,7 +44,6 @@ const App = () => {
 	
 	/**
 	 * @param {String} scheme
-	 * @returns {undefined}
 	 */
 	const VKWebAppUpdateConfig = scheme => {
 		if (!isDark(scheme)) {
@@ -55,7 +54,10 @@ const App = () => {
 		}
 
 		setColorScheme(scheme);
-		return document.getElementsByTagName('body')[0].setAttribute('scheme', scheme);
+
+		const schemeAttribute = document.createAttribute('scheme');
+		schemeAttribute.value = scheme;
+		document.body.attributes.setNamedItem(schemeAttribute);
 	}
 
 	useEffect(() => {
