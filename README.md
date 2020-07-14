@@ -33,7 +33,7 @@ Here's why:
 ### Built With
 * [React](https://github.com/facebook/react)
 * [VKUI](https://github.com/VKCOM/VKUI)
-* [VK Connect](https://github.com/VKCOM/vk-connect)
+* [VK Bridge](https://github.com/VKCOM/vk-bridge)
 
 This app not use react router. And there are several reasons for this.
 
@@ -69,11 +69,9 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
 <!-- LICENSE -->
 ## License
  See `LICENSE` for more information.
-
 
 
 <!-- CONTACT -->

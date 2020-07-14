@@ -15,7 +15,7 @@ const SearchBar = ({ setQuerySearch, querySearch, setModal }) => {
 	 * @returns {Mixed}
 	 */
 	const validateSearchQuery = query => {
-		if (!query.length) return true;
+		if (!query.length) return false;
 		if (!query.replace(/\s/g, '').length) return false;
 		if (query.length > MAX_SEARCH_LENGTH) return setModal(
 			<SearchAlert setModal={setModal} />
@@ -25,13 +25,18 @@ const SearchBar = ({ setQuerySearch, querySearch, setModal }) => {
 	};
 
     /**
-	 * @param {String} query
+	 * @param {Object} e
      * @returns {Mixed}
 	 */
-	const searchOnChange = query => {
-		if (validateSearchQuery(query)) return setQuerySearch(query);
+	const searchOnChange = e => {
+		const { target: {
+			value,
+		}} = e;
 
-		return false;
+		if (!value.length) return setQuerySearch('');
+		if (!validateSearchQuery(value)) return false;
+		
+		return setQuerySearch(value);
 	};
 
     return (

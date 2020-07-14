@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Epic } from '@vkontakte/vkui';
-import vkConnect from '@vkontakte/vk-connect';
+import vkBridge from '@vkontakte/vk-bridge';
 import get from 'lodash/get';
 import '@vkontakte/vkui/dist/vkui.css';
 import NoConnectionModal from 'vkui-no-connection-modal';
@@ -48,7 +48,7 @@ const App = () => {
 	 */
 	const VKWebAppUpdateConfig = scheme => {
 		if (!isDark(scheme)) {
-			vkConnect.send('VKWebAppSetViewSettings', {
+			vkBridge.send('VKWebAppSetViewSettings', {
 				status_bar_style: 'light', 
 				action_bar_color: '#8b44f7',
 			});
@@ -59,10 +59,10 @@ const App = () => {
 	}
 
 	useEffect(() => {
-		const vkEvents = vkConnect.subscribe(e => {
+		const vkEvents = vkBridge.subscribe(e => {
 			switch(e.detail.type) {
 				case 'VKWebAppUpdateConfig':
-					const scheme = get(e, 'detail.data.scheme', 'client_light');
+					const scheme = get(e, 'detail.data.scheme', DEFAULT_COLOR_SCHEME);
 					VKWebAppUpdateConfig(scheme);
 					break;
 				default:
@@ -72,7 +72,7 @@ const App = () => {
 		});
 
 		return () => {
-			vkConnect.unsubscribe(vkEvents);
+			vkBridge.unsubscribe(vkEvents);
 		};
 	}, [VKWebAppUpdateConfig]);
 

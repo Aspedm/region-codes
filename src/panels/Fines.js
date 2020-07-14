@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { View, Panel, PanelHeader, PanelHeaderButton, Group, List, Cell, ConfigProvider } from '@vkontakte/vkui';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
-import VkConnect from '@vkontakte/vk-connect';
+import vkBridge from '@vkontakte/vk-bridge';
 
 // Components
 import FinesDetail from '../components/finesDetail';
@@ -52,7 +52,7 @@ const Fines = ({ id, scheme, modal }) => {
         const activePanel = history[history.length - 1];
 
         if (activePanel === id) {
-            VkConnect.send('VKWebAppDisableSwipeBack');
+            vkBridge.send('VKWebAppDisableSwipeBack');
         }
 
         setPanelHistory(history);
@@ -68,7 +68,7 @@ const Fines = ({ id, scheme, modal }) => {
         history.push(target);
 
         if (activePanel === id) {
-            VkConnect.send('VKWebAppEnableSwipeBack');
+            vkBridge.send('VKWebAppEnableSwipeBack');
         }
 
         window.history.pushState({}, '', target);
@@ -95,7 +95,7 @@ const Fines = ({ id, scheme, modal }) => {
      * @returns {Object}
      */
     const openCheckFinesApp = () => {
-        return VkConnect.send('VKWebAppOpenApp', {
+        return vkBridge.send('VKWebAppOpenApp', {
             app_id: FINES_APP_ID,
         });
     };
