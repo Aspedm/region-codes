@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "efc3f96f2a9759b82089",
+    "revision": "764e982adef30457fde5",
     "url": "/region-codes/static/css/main.79faaa09.chunk.css"
   },
   {
-    "revision": "efc3f96f2a9759b82089",
-    "url": "/region-codes/static/js/main.beb23395.chunk.js"
+    "revision": "764e982adef30457fde5",
+    "url": "/region-codes/static/js/main.59c19152.chunk.js"
   },
   {
     "revision": "4ece08f67d646629938b",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/region-codes/static/media/roadnumbers.488f872a.woff"
   },
   {
-    "revision": "09c68a206dd680cf737610521d4c14a5",
+    "revision": "14df8ffc62d693000c6bb80c7356579b",
     "url": "/region-codes/index.html"
   }
 ];
