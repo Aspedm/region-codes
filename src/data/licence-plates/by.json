@@ -7,7 +7,7 @@
         ],
         "meta": {
             "carCount": "325",
-            "postionByCarCount": "3",
+            "positionByCarCount": "3",
             "phones": [
                 "+375 162 23-62-62"
             ]
@@ -25,7 +25,7 @@
         ],
         "meta": {
             "carCount": "304",
-            "postionByCarCount": "5",
+            "positionByCarCount": "5",
             "phones": [
                 "+375 212 58-44-44"
             ]
@@ -43,7 +43,7 @@
         ],
         "meta": {
             "carCount": "271",
-            "postionByCarCount": "7",
+            "positionByCarCount": "7",
             "phones": [
                 "+375 232 70-41-16"
             ]
@@ -61,7 +61,7 @@
         ],
         "meta": {
             "carCount": "355",
-            "postionByCarCount": "1",
+            "positionByCarCount": "1",
             "phones": [
                 "+375 152 79-75-04"
             ]
@@ -79,7 +79,7 @@
         ],
         "meta": {
             "carCount": "332",
-            "postionByCarCount": "2",
+            "positionByCarCount": "2",
             "phones": [
                 "+375 17 511-35-60"
             ]
@@ -97,7 +97,7 @@
         ],
         "meta": {
             "carCount": "286",
-            "postionByCarCount": "6",
+            "positionByCarCount": "6",
             "phones": [
                 "+375 222 48-44-44"
             ]
@@ -115,7 +115,7 @@
         ],
         "meta": {
             "carCount": "320",
-            "postionByCarCount": "4",
+            "positionByCarCount": "4",
             "phones": [
                 "+375 17 222-17-17"
             ]
@@ -133,7 +133,7 @@
         ],
         "meta": {
             "carCount": null,
-            "postionByCarCount": null,
+            "positionByCarCount": null,
             "phones": null
         },
         "tags": [
@@ -149,7 +149,7 @@
         ],
         "meta": {
             "carCount": null,
-            "postionByCarCount": null,
+            "positionByCarCount": null,
             "phones": null
         },
         "tags": [

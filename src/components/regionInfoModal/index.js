@@ -22,9 +22,9 @@ const RegionInfoModal = ({ setModal, region }) => {
      */
     const checkIsEmptyStat = () => {
         const carCount = get(region, 'meta.carCount', null);
-        const postionByCarCount = get(region, 'meta.postionByCarCount', null);
+        const positionByCarCount = get(region, 'meta.positionByCarCount', null);
 
-        return !carCount && !postionByCarCount;
+        return !carCount && !positionByCarCount;
     };
 
     const statsIsEmpty = checkIsEmptyStat();
@@ -75,7 +75,7 @@ const RegionInfoModal = ({ setModal, region }) => {
                             </Cell>
                             <Cell 
                                 description="По кол-ву машин."
-                                indicator={<Counter mode="primary">{region.meta.postionByCarCount}</Counter>}
+                                indicator={<Counter mode="primary">{region.meta.positionByCarCount}</Counter>}
                             >
                                 Занимаемое место
                             </Cell>
